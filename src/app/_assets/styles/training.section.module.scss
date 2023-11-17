@@ -1,0 +1,46 @@
+.training-register {
+  @apply bg-[#009F0B]/5;
+  & .container {
+    @apply flex justify-between;
+  }
+
+  &--content {
+    @apply w-[50%] bg-[#0E1D2B] pt-[7.2rem] px-[4.0rem] text-white;
+
+    & p {
+      &:first-of-type {
+        @apply text-[#009F0B] uppercase font-bold;
+      }
+
+      &:last-of-type {
+        @apply leading-[2.4rem];
+      }
+    }
+
+    & h4 {
+      @apply font-epilogue font-bold py-[1.6rem];
+    }
+
+    & ul {
+      @apply mt-[2.4rem] flex space-x-[7.2rem];
+      & li {
+        @apply text-[1.6rem];
+      }
+    }
+    & div {
+      @apply mt-[7.2rem] space-x-[2.4rem];
+      & button {
+        &:first-of-type {
+          @apply bg-[#009F0B];
+        }
+        &:last-of-type {
+          @apply bg-[#ffffff] text-black;
+        }
+      }
+    }
+  }
+  //
+  &--image {
+    @apply w-[50%];
+  }
+}

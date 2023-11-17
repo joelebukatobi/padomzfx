@@ -1,0 +1,58 @@
+.footer {
+  //
+  @apply bg-[#0E1D2B]  text-white;
+  //
+  &-top {
+    @apply flex justify-between pt-[9.6rem] px-[14rem] pb-[15.4rem];
+    //
+    div {
+      //
+      &:nth-of-type(1) {
+        @apply w-[20.17%] h-[5.6rem];
+      }
+      //
+      &:nth-of-type(2) {
+        @apply w-[28.8%] flex justify-between;
+      }
+      //
+      &:nth-of-type(3) {
+        @apply w-[23.17%];
+        //
+        & ul {
+          & li {
+            & p {
+              @apply text-[#B8B4B1];
+            }
+          }
+        }
+      }
+      //
+      & ul {
+        //
+        & li {
+          //
+          & h6 {
+            @apply font-extrabold mb-[2.4rem];
+          }
+          //
+          & h5 {
+            @apply font-medium;
+          }
+          //
+          & p {
+            @apply mb-[1.6rem] font-normal;
+          }
+        }
+      }
+    }
+  }
+
+  //
+  &-copyright {
+    @apply flex justify-center bg-[#061626] py-[4rem] text-[1.2rem] font-medium;
+    //
+    & span {
+      @apply text-[#B8B4B1];
+    }
+  }
+}

@@ -1,0 +1,76 @@
+// Color Variables //
+// ---------------------------------------------------------------------//
+$color-green-main: #009f0b;
+$color-blue-main: #0e1d2b;
+$color-yellow-main: #f7ce5b;
+$color-white-main: #ffffff;
+
+// Font Variables //
+// ---------------------------------------------------------------------//
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+//
+$font-heading: 'Epilogue', sans-serif;
+$font-body: 'Mulish' sans-serif;
+
+// Body
+body::-webkit-scrollbar {
+  //
+  width: 0.5rem;
+  //
+  &:hover {
+    width: 1rem;
+  }
+  //
+  &-track {
+    @apply bg-gray-500;
+  }
+  //
+  &-thumb {
+    @apply bg-gray-500/[0.05];
+    &:hover {
+      @apply bg-gray-500/[0.2];
+    }
+  }
+}
+
+html {
+  font-family: Mulish;
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+  //
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    font-size: 55%;
+  }
+}
+
+.container {
+  //
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  //
+  @media all and (min-width: 320px) and (max-width: 768px) {
+    padding: 0 3.2rem;
+  }
+  //
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    padding: 0 3.2rem;
+  }
+  //
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    padding: 0 3.2rem;
+  }
+  //
+  @media all and (min-width: 1440px) and (max-width: 1920px) {
+    max-width: 124.8rem;
+  }
+  //
+  @media all and (min-width: 1920px) {
+    max-width: 144rem;
+  }
+  //
+  @media all and (min-width: 2560px) {
+    max-width: 144rem;
+  }
+}

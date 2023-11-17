@@ -1,0 +1,68 @@
+.index {
+  & .potential {
+    //
+    @apply w-[88.30%] m-auto flex justify-between items-center pt-[18rem] pb-[20rem];
+    //
+    &-image {
+      @apply w-[43.10%] relative;
+    }
+    //
+    &-after {
+      @apply w-[74.52%] absolute left-[50%] top-[65%];
+    }
+
+    &-text {
+      @apply w-[47.18%];
+
+      & h4 {
+        @apply font-epilogue font-bold mb-[1.6rem] w-[83.84%];
+      }
+
+      & p {
+        @apply leading-[2.4rem];
+        //
+        &:first-of-type {
+          @apply mb-[1.6rem];
+        }
+      }
+    }
+  }
+
+  & .course {
+    @apply w-[86.21%] m-auto mt-[14.1rem];
+    //
+    &-header {
+      & h3 {
+        @apply font-epilogue font-bold w-[42%];
+        & span {
+          @apply text-[#009F0B];
+        }
+      }
+    }
+    //
+    &-content {
+      @apply mt-[9.6rem] flex justify-between flex-wrap;
+      //
+      &--card {
+        @apply w-[39%] mb-[12.1rem];
+        //
+        &--text {
+          & h5 {
+            @apply mb-[1.6rem] font-bold;
+          }
+          //
+          & p {
+            @apply w-[88.38%];
+          }
+        }
+      }
+    }
+  }
+
+  & .register {
+    //
+    & .container {
+      @apply py-[10.4rem];
+    }
+  }
+}

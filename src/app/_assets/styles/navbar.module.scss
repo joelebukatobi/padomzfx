@@ -1,0 +1,17 @@
+.navbar {
+  //
+  @apply h-[8rem] bg-[#ffffff] rounded-[.4rem] pt-[1.6rem] pr-[3.2rem] pl-[3.2rem] pb-[1.6rem] flex justify-between items-center;
+  //
+  & a {
+    & svg {
+      @apply h-[5.2rem] w-[21.5rem];
+    }
+  }
+  //
+  & ul {
+    @apply flex;
+    & li {
+      @apply text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish font-medium;
+    }
+  }
+}

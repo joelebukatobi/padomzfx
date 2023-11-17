@@ -1,0 +1,35 @@
+.landing-header {
+  @apply bg-[#0e1d2b] pt-[2.4rem] pr-[4.8rem] pl-[4.8rem] relative h-[103.5rem];
+
+  &-content {
+    @apply mt-[14.152rem] text-white flex justify-between px-[4rem];
+    //
+    &--text {
+      @apply w-[47.31%];
+      //
+      & h1 {
+        @apply w-full font-bold leading-[7rem] mb-[3rem] font-epilogue;
+      }
+
+      & h5 {
+        @apply w-[85%] leading-[2.9rem] font-normal pb-[7.2rem];
+      }
+
+      & button {
+        @apply bg-[#009F0B];
+      }
+    }
+    //
+    &--image {
+      @apply w-[50.94%] flex justify-end;
+    }
+  }
+
+  &-waves {
+    @apply absolute left-0 bottom-[-1.6rem] w-[100%];
+  }
+}
+
+.header {
+  @apply bg-[#0e1d2b] pt-[2.4rem] pr-[4.8rem] pl-[4.8rem] relative;
+}

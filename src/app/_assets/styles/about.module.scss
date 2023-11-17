@@ -1,0 +1,13 @@
+.about {
+  //
+  & .header {
+    &-training {
+      //
+      @apply w-[60.09%] pt-[11.452rem] pb-[14.3rem];
+      //
+      & h3 {
+        @apply font-extrabold font-epilogue w-[73.88%] text-[#ffffff];
+      }
+    }
+  }
+}

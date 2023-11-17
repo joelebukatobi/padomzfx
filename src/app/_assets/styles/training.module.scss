@@ -1,0 +1,27 @@
+.training {
+  //
+  & .header {
+    &-training {
+      //
+      @apply w-[77%] pt-[13.52rem] pb-[15.1rem] space-y-[1.6rem];
+      //
+      & p {
+        &:first-of-type {
+          @apply bg-[#F7CE5B] p-[1.6rem] uppercase font-bold mb-[2.4rem] w-[21.85%] xl:w-[15%] text-center text-[1.4rem];
+        }
+        //
+        &:last-of-type {
+          @apply text-white text-[2rem];
+        }
+      }
+      //
+      & h3 {
+        @apply font-extrabold font-epilogue w-[73.88%] text-[#ffffff];
+      }
+    }
+  }
+
+  &-available {
+    @apply mt-[14rem] mb-[21.4rem] space-y-[6.4rem];
+  }
+}

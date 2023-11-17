@@ -1,0 +1,39 @@
+'use client';
+//
+import React from 'react';
+// Next
+import Image from 'next/image';
+// Components
+import { Button } from '@/_components/atoms/Button';
+// Images
+import TrainingImage from '@/_assets/images/training-image.png';
+//
+
+export const TrainingSection = ({ className }) => {
+  return (
+    <section className={`${className} training-register`}>
+      <div className="container">
+        <div className="training-register--content">
+          <p>Upcoming register</p>
+          <h4>Mastering Forex Trading - A Comprehensive Guide</h4>
+          <p>
+            Are you looking to unlock the potential of the Forex market and become a skilled trader? The course is
+            designed for beginners and intermediate traders who want to develop a solid understanding of the Forex
+            market, trading strategies...
+          </p>
+          <ul>
+            <li>4 Weeks</li>
+            <li>12 December, 2023</li>
+          </ul>
+          <div>
+            <Button>Register</Button>
+            <Button>Learn More</Button>
+          </div>
+        </div>
+        <div className="training-register--image">
+          <Image src={TrainingImage} width="" height="" alt="Training Image" />
+        </div>
+      </div>
+    </section>
+  );
+};
