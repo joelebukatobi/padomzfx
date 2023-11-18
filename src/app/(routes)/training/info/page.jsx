@@ -1,6 +1,7 @@
 'use client';
 // Next
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 // Components
 import { Header } from '@/_components/organisms/Header';
 import { Button } from '@/_components/atoms/Button';
@@ -10,6 +11,10 @@ import TrainingInfo from '@/_assets/images/training-info.png';
 import ReviewImage from '@/_assets/images/review-image.png';
 
 export default function Training() {
+  const navigate = useRouter();
+  const handleClick = () => {
+    navigate.push('/training/info');
+  };
   return (
     <div className="training">
       <Header>
@@ -40,7 +45,7 @@ export default function Training() {
                 </p>
               </header>
               <div>
-                <Button>Register</Button>
+                <Button onClick={handleClick}>Register</Button>
               </div>
             </div>
 

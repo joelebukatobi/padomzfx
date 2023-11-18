@@ -28,7 +28,11 @@
   &--link {
     & p {
       &:first-of-type {
-        @apply font-epilogue font-bold;
+        @apply font-epilogue font-bold flex gap-x-[.8rem] items-center;
+      }
+
+      & svg {
+        @apply h-[1.2rem] w-[1.2rem];
       }
     }
   }

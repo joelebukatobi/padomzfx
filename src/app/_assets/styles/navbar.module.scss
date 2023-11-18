@@ -17,7 +17,23 @@
   }
   & ul {
     & li {
-      @apply text-[2rem] font-bold lg:text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish lg:font-medium;
+      @apply text-[2rem] font-bold lg:text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish lg:font-medium cursor-pointer;
+
+      & svg {
+        @apply hidden lg:block h-[1.6rem] w-[1.6rem];
+      }
+
+      &[aria-label='dropdown'] {
+        @apply flex flex-col lg:flex-row lg:items-center gap-x-[.8rem] px-[1.6rem] relative;
+
+        & hr {
+          @apply mt-[1.6rem] lg:hidden;
+        }
+
+        & ul {
+          @apply lg:absolute z-[100] bg-[#ffffff] rounded-[.4rem]  lg:top-[7.2rem] py-[.8rem] w-[100%] lg:left-0;
+        }
+      }
     }
   }
 }

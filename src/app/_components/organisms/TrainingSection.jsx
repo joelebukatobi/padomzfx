@@ -3,6 +3,7 @@
 import React from 'react';
 // Next
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 // Components
 import { Button } from '@/_components/atoms/Button';
 // Images
@@ -10,6 +11,10 @@ import TrainingImage from '@/_assets/images/training-image.png';
 //
 
 export const TrainingSection = ({ className }) => {
+  const navigate = useRouter();
+  const handleClick = () => {
+    navigate.push('/training/info');
+  };
   return (
     <section className={`${className} training-register`}>
       <div className="container">
@@ -39,7 +44,7 @@ export const TrainingSection = ({ className }) => {
           </ul>
           <div>
             <Button>Register</Button>
-            <Button>Learn More</Button>
+            <Button onClick={handleClick}>Learn More</Button>
           </div>
         </div>
         <div className="training-register--image">

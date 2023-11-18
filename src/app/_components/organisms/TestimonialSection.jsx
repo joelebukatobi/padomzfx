@@ -22,7 +22,12 @@ export const TestimonialSection = ({ className }) => {
         <div className="testimonial-section--image">
           <Image src={TestimonialImage} width="" height="" alt="" />
           <div className="testimonial-section--link">
-            <p>Read Testimonials</p>
+            <p>
+              Read Testimonials
+              <svg>
+                <use href={`/images/sprite.svg#icon-arrow-right`} />
+              </svg>
+            </p>
             <p>Over 20 Amazing Stories</p>
           </div>
         </div>

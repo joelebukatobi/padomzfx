@@ -88,16 +88,17 @@
     @apply bg-[#0E1D2B] pt-[8rem] pb-[16rem];
 
     & .container {
-      @apply lg:w-[80.68%] flex flex-col justify-center lg:flex-row items-center space-y-[4rem];
+      @apply lg:w-[80.68%] flex flex-col justify-center lg:flex-row items-center lg:items-start space-y-[4rem] lg:space-y-0;
     }
 
     &-bio {
-      @apply text-center w-[75%] lg:w-[27.37%];
+      @apply text-center lg:text-left w-[75%] lg:w-[27.37%];
     }
+    //
     &-image {
       @apply bg-[#F7CE5B] p-[4rem];
     }
-
+    //
     &-footer {
       @apply pt-[1.6rem];
       & h5 {
