@@ -3,7 +3,7 @@
   @apply bg-[#0E1D2B]  text-white;
   //
   &-top {
-    @apply flex flex-col lg:flex-row lg:justify-between pt-[9.6rem] lg:px-[14rem] pb-[15.4rem] space-y-[7.2rem];
+    @apply flex flex-col lg:flex-row lg:justify-between pt-[9.6rem] lg:px-[14rem] pb-[15.4rem] space-y-[7.2rem] lg:space-y-0;
     //
     div {
       //

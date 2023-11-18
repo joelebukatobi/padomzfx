@@ -41,16 +41,16 @@ export default function About() {
               <div className="academy-left">
                 <Image src={AcademyLeft} width="" height="" alt="" />
                 <p>For Over Four Decades in Financial Market</p>
-                <div className="academy-left-label">
+                {/* <div className="academy-left-label">
                   <p>Our Journey</p>
-                </div>
+                </div> */}
               </div>
               <div className="academy-right">
                 <Image src={AcademyRight} width="" height="" alt="" />
-                <p>Dedivated & Professional Trainers</p>{' '}
-                <div className="academy-right-label">
+                <p>Dedivated & Professional Trainers</p>
+                {/* <div className="academy-right-label">
                   <p>Our Team</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

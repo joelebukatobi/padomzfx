@@ -3,23 +3,23 @@
   & .header {
     &-about {
       //
-      @apply pl-[10.4rem] w-[73.88%] pt-[11.452rem] pb-[14.3rem];
+      @apply lg:pl-[10.4rem] lg:w-[73.88%] pt-[11.452rem] pb-[14.3rem];
       //
       & h3 {
-        @apply font-extrabold font-epilogue xl:w-[73.88%] text-[#ffffff];
+        @apply font-extrabold font-epilogue lg:w-[73.88%] text-[#ffffff];
       }
     }
   }
 
   & .academy {
-    @apply w-[91.66%] gap-x-[3.2rem] m-auto flex justify-center pt-[16rem] pb-[20rem];
+    @apply lg:w-[91.66%] gap-x-[3.2rem] m-auto flex flex-col lg:flex-row lg:justify-center pt-[16rem] pb-[20rem] space-y-[8rem] lg:space-y-[0];
 
     &-image {
-      @apply w-[48.07%];
+      @apply lg:w-[48.07%];
     }
     //
     &-content {
-      @apply flex flex-col justify-between w-[49.3%];
+      @apply flex flex-col justify-between lg:w-[49.3%];
     }
     //
     &-text {
@@ -28,77 +28,67 @@
       }
 
       & p {
-        @apply w-[85%];
+        @apply lg:w-[85%];
         //
       }
     }
     //
     &-group {
-      @apply flex;
+      @apply flex flex-col lg:flex-row mt-[8rem] lg:mt-[0] lg:space-x-[3.2rem] space-y-[8rem] lg:space-y-[0];
     }
     //
-    &-right {
-      @apply relative w-[48.93%];
-      //
-      & p {
-        @apply w-[74.2%] mt-[1.6rem];
-      }
-      &-label {
-        @apply absolute top-[12rem] left-[16rem];
-        & p {
-          @apply bg-[#009F0B] px-[2.4rem] w-full font-bold text-[#ffffff] py-[1.6rem];
-        }
-      }
-    }
-    //
+    &-right,
     &-left {
-      @apply relative  w-[48.93%];
       //
       & p {
-        @apply w-[74.2%] mt-[1.6rem];
+        @apply font-bold lg:w-[74.2%] mt-[1.6rem];
       }
-      &-label {
-        @apply absolute top-[12rem] left-[13.5rem];
-        & p {
-          @apply bg-[#009F0B] px-[2.4rem] w-full font-bold text-[#ffffff] py-[1.6rem];
-        }
-      }
+      // &-label {
+      //   @apply absolute top-[12rem] left-[16rem];
+      //   & p {
+      //     @apply bg-[#009F0B] px-[2.4rem] w-full font-bold text-[#ffffff] py-[1.6rem];
+      //   }
+      // }
     }
   }
 
   & .advantage {
-    @apply w-[93.5%] m-auto mb-[20rem];
+    @apply lg:w-[93.5%] m-auto mb-[20rem];
     & header {
       @apply flex flex-col items-center;
       & h4 {
-        @apply font-epilogue font-extrabold;
+        @apply text-center font-epilogue font-extrabold;
       }
       & p {
-        @apply w-[58.17%] text-center;
+        @apply lg:w-[58.17%] text-center;
       }
     }
 
     &-row {
-      @apply flex justify-between mt-[4rem];
+      @apply flex flex-col lg:flex-row lg:justify-between mt-[4rem] space-y-[3.2rem] lg:space-y-[0];
     }
 
     &-card {
-      @apply relative py-[3.2rem] px-[2.4rem] pl-[4rem];
+      @apply relative py-[3.2rem] lg:px-[2.4rem] lg:pl-[4rem];
       & p {
         &:first-of-type {
           @apply font-bold mb-[1.6rem];
         }
       }
 
+      &:nth-of-type(1) {
+        @apply border-b-[.1rem] border-b-[#0eid2b] lg:border-0;
+      }
+
       &:nth-of-type(2) {
-        @apply border-x-[.1rem] border-[#0eid2b];
+        @apply border-b-[.1rem] border-b-[#0eid2b] lg:border-b-0 lg:border-x-[.1rem] lg:border-[#0eid2b];
       }
     }
 
     &-number {
-      @apply absolute left-[2.4rem] top-[-1.6rem];
+      @apply absolute lg:left-[2.4rem] top-[-1.6rem];
       & h1 {
-        @apply font-epilogue font-extrabold text-[#009F0B]/5;
+        @apply font-epilogue font-extrabold text-[#009F0B]/[5%];
       }
     }
   }
@@ -107,14 +97,14 @@
     @apply bg-[#009F0B] mb-[32rem];
 
     & .container {
-      @apply flex relative;
+      @apply flex flex-col-reverse lg:flex-row relative;
     }
 
     &-text {
-      @apply w-[41.66%] pt-[14rem] pb-[21rem] text-white;
+      @apply lg:w-[41.66%] pt-[56rem] pb-[10.4rem] lg:pt-[14rem] lg:pb-[21rem] text-white;
       & p {
         &:first-of-type {
-          @apply w-[46.92%] text-center bg-black uppercase p-[1.6rem];
+          @apply w-[24rem] text-center bg-black uppercase p-[1.6rem];
         }
 
         &:last-of-type {
@@ -128,15 +118,15 @@
     }
 
     &-image {
-      @apply w-[56.89%] absolute right-0;
+      @apply lg:w-[56.89%] absolute top-0 right-0;
     }
   }
 
   & .approach {
-    @apply w-full justify-center m-auto flex gap-x-[9.6rem] items-end mb-[22.4rem];
+    @apply w-full justify-center m-auto flex flex-col lg:flex-row gap-x-[9.6rem] items-end mb-[22.4rem] space-y-[6.4rem] lg:space-y-[0];
 
     &-content {
-      @apply w-[47.29%];
+      @apply lg:w-[47.29%];
       & header {
         & h4 {
           @apply font-epilogue font-extrabold mb-[1.6rem];
@@ -149,7 +139,7 @@
     }
 
     &-list {
-      @apply pt-[3.2rem] w-[32.11%] space-y-[4rem];
+      @apply pt-[3.2rem] lg:w-[32.11%] space-y-[4rem];
     }
 
     &-card {
