@@ -32,7 +32,7 @@ export const Navbar = () => {
         <ul
           className={
             open
-              ? `flex bg-[#ffffff] h-auto absolute top-[9.6rem] left-0 py-[1.6rem] flex-col w-[100%] rounded-[.4rem]`
+              ? `flex bg-[#ffffff] h-auto absolute top-[9.6rem] left-0 py-[1.6rem] flex-col w-[100%] rounded-[.4rem] z-10`
               : `hidden lg:flex`
           }
         >

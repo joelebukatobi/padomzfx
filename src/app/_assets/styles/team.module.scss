@@ -3,7 +3,7 @@
   & .header {
     &-team {
       //
-      @apply pl-[10.4rem] w-[46.09%] pt-[13.52rem] pb-[15.1rem];
+      @apply lg:pl-[10.4rem] lg:w-[46.09%] pt-[13.52rem] pb-[15.1rem];
       //
       & p {
         &:first-of-type {
@@ -18,10 +18,10 @@
   }
 
   & .team {
-    @apply w-[91.34%] m-auto flex gap-x-[2rem] gap-y-[7.2rem] flex-wrap py-[16rem];
+    @apply lg:w-[91.34%] m-auto flex flex-col lg:flex-row gap-x-[2rem] gap-y-[7.2rem] lg:flex-wrap py-[16rem];
 
     &-card {
-      @apply w-[23.68%];
+      @apply lg:w-[23.68%];
 
       & img {
         @apply w-[100%];

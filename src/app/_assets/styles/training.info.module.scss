@@ -1,0 +1,177 @@
+.training {
+  //
+  & .header {
+    &-info {
+      @apply relative flex flex-col lg:flex-row justify-between pt-[8rem] lg:pt-[12rem] pb-[8rem];
+    }
+
+    &-content {
+      @apply lg:w-[50%] bg-[#0E1D2B] lg:pt-[7.2rem] px-[4.0rem] text-white;
+
+      & header {
+        & h4 {
+          @apply font-epilogue font-bold py-[1.6rem];
+        }
+      }
+      //
+      & ul {
+        @apply mt-[2.4rem] flex justify-between lg:justify-start lg:space-x-[7.2rem];
+        & li {
+          @apply flex gap-x-[1.6rem];
+          //
+          & svg {
+            @apply h-[2.4rem] w-[2.4rem];
+          }
+
+          & p {
+            @apply text-[#ffffff];
+          }
+        }
+      }
+      //
+      & div {
+        & button {
+          @apply w-[50%] mt-[6.4rem] bg-[#009F0B];
+        }
+      }
+    }
+
+    &-image {
+      @apply hidden lg:block absolute w-[53.68%] right-[0rem];
+    }
+  }
+
+  & .course {
+    @apply lg:w-[86.21%] m-auto mt-[8rem] lg:mt-[24rem];
+    //
+    &-header {
+      @apply flex flex-col items-center;
+      //
+      & h3 {
+        @apply font-epilogue font-bold text-center;
+        & span {
+          @apply text-[#009F0B];
+        }
+      }
+
+      & p {
+        @apply lg:w-[62.82%] text-center;
+      }
+    }
+    //
+    &-content {
+      @apply mt-[9.6rem] flex justify-between flex-wrap;
+      //
+      &--card {
+        @apply lg:w-[39%] mb-[12.1rem] flex gap-x-[1.6rem];
+        //
+        &--text {
+          & h5 {
+            @apply mb-[1.6rem] font-bold;
+          }
+          //
+          & p {
+            @apply w-[88.38%];
+          }
+        }
+
+        &--icon {
+          & svg {
+            @apply mt-[.32rem] h-[2.4rem] w-[2.4rem];
+          }
+        }
+      }
+    }
+  }
+
+  & .review {
+    @apply bg-[#0E1D2B] pt-[8rem] pb-[16rem];
+
+    & .container {
+      @apply lg:w-[80.68%] flex flex-col justify-center lg:flex-row items-center space-y-[4rem];
+    }
+
+    &-bio {
+      @apply text-center w-[75%] lg:w-[27.37%];
+    }
+    &-image {
+      @apply bg-[#F7CE5B] p-[4rem];
+    }
+
+    &-footer {
+      @apply pt-[1.6rem];
+      & h5 {
+        @apply font-bold text-[#ffffff];
+      }
+
+      & p {
+        @apply font-bold text-[#F7CE5B]/[16];
+      }
+    }
+
+    &-content {
+      @apply lg:w-[62.72%] px-[6.4rem] pt-[6.4rem] bg-[#ffffff]/[10%] relative pb-[12rem] lg:pb-[0];
+    }
+
+    &-text {
+      @apply mb-[4rem] lg:mb-[9.6rem];
+
+      & p {
+        @apply leading-[3rem] text-[#ffffff];
+      }
+    }
+
+    &-rating {
+      @apply bg-[#041E37] flex items-center justify-center w-[8rem] rounded-[4rem] gap-x-[.8rem];
+
+      & svg {
+        @apply h-[1.6rem] w-[1.6rem];
+      }
+
+      & p {
+        @apply leading-[3rem] text-[#ffffff];
+      }
+    }
+
+    &-circle {
+      @apply absolute left-1/2 transform -translate-x-1/2  lg:left-auto lg:transform-none lg:translate-x-0 bottom-[-6rem] lg:right-[-6rem] h-[12rem] w-[12rem] bg-[#F7CE5B] rounded-[100%];
+    }
+  }
+
+  & .schedule {
+    @apply lg:w-[91.5%] m-auto py-[12rem] flex flex-col lg:flex-row lg:justify-between;
+
+    &-content {
+      @apply lg:w-[50.61%];
+      //
+      & h4 {
+        @apply font-epilogue font-extrabold;
+      }
+    }
+
+    &-dates {
+      @apply lg:w-[27.93%];
+    }
+
+    &-card {
+      @apply w-[90%] py-[3.2rem];
+
+      &:not(:first-of-type) {
+        @apply border-t-[.1rem];
+      }
+
+      &-top {
+        @apply flex gap-x-[1.6rem] mb-[2.4rem];
+        & svg {
+          @apply w-[2.4rem] h-[2.4rem];
+        }
+      }
+
+      &-bottom {
+        & h5 {
+          @apply font-epilogue font-bold;
+        }
+      }
+    }
+  }
+}
