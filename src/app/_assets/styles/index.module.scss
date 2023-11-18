@@ -44,7 +44,7 @@
       @apply mt-[9.6rem] flex justify-between flex-wrap;
       //
       &--card {
-        @apply w-[39%] mb-[12.1rem];
+        @apply w-[39%] mb-[12.1rem] flex gap-x-[1.6rem];
         //
         &--text {
           & h5 {
@@ -53,6 +53,12 @@
           //
           & p {
             @apply w-[88.38%];
+          }
+        }
+
+        &--icon {
+          & svg {
+            @apply h-[2.4rem] w-[2.4rem];
           }
         }
       }

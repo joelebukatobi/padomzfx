@@ -7,24 +7,34 @@
   &--content {
     @apply w-[50%] bg-[#0E1D2B] pt-[7.2rem] px-[4.0rem] text-white;
 
-    & p {
-      &:first-of-type {
-        @apply text-[#009F0B] uppercase font-bold;
+    & header {
+      & p {
+        &:first-of-type {
+          @apply text-[#009F0B] uppercase font-bold;
+        }
+
+        &:last-of-type {
+          @apply leading-[2.4rem];
+        }
       }
 
-      &:last-of-type {
-        @apply leading-[2.4rem];
+      & h4 {
+        @apply font-epilogue font-bold py-[1.6rem];
       }
     }
-
-    & h4 {
-      @apply font-epilogue font-bold py-[1.6rem];
-    }
-
+    //
     & ul {
       @apply mt-[2.4rem] flex space-x-[7.2rem];
       & li {
-        @apply text-[1.6rem];
+        @apply flex gap-x-[1.6rem];
+        //
+        & svg {
+          @apply h-[2.4rem] w-[2.4rem];
+        }
+
+        & p {
+          @apply text-[#ffffff];
+        }
       }
     }
     & div {

@@ -14,7 +14,7 @@ import Logo from '@/_assets/images/logo-full.png';
 export const Navbar = () => {
   return (
     <nav className="container navbar">
-      <a href="">
+      <a href="/">
         <Image width="215" height="52" src={Logo} alt="Logo" />
       </a>
       <ul>

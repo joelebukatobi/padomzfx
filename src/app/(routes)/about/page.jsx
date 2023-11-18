@@ -30,11 +30,11 @@ export default function About() {
             <div className="academy-text">
               <h4>The Academy</h4>
               <p>
-                Welcome to PadomzFx Academy, where financial success begins with knowledge and support. We're more than
-                just an academy; we're your partners on the journey to financial empowerment. We believe in a hands-on,
-                practical approach to learning. Our courses are designed to give you the knowledge you need, but we also
-                emphasize real-world practice. You'll have access to live trading sessions, market analysis, and ongoing
-                support to ensure your success.
+                {`   Welcome to PadomzFx Academy, where financial success begins with knowledge and support. We're more than
+              just an academy; we're your partners on the journey to financial empowerment. We believe in a hands-on,
+              practical approach to learning. Our courses are designed to give you the knowledge you need, but we also
+              emphasize real-world practice. You'll have access to live trading sessions, market analysis, and ongoing
+              support to ensure your success.`}
               </p>
             </div>
             <div className="academy-group">
@@ -94,8 +94,8 @@ export default function About() {
               </div>
               <p>Funding Opportunities</p>
               <p>
-                We're not just about education; we're also about providing you with funding opportunities to kickstart
-                your trading career. We believe in your potential, and we're ready to invest in it.
+                {`    We're not just about education; we're also about providing you with funding opportunities to kickstart
+                your trading career. We believe in your potential, and we're ready to invest in it.`}
               </p>
             </div>
           </div>
@@ -108,9 +108,9 @@ export default function About() {
             <p>Mission • Vision • Value</p>
             <h4>What We Stand for</h4>
             <p>
-              At PadomzFx Academy, our mission is clear - to empower individuals like you with the skills, knowledge,
+              {`  At PadomzFx Academy, our mission is clear - to empower individuals like you with the skills, knowledge,
               and funding needed to build a thriving career in the financial markets. We understand that the world of
-              trading and investing may seem complex, but we're here to simplify it for you.
+              trading and investing may seem complex, but we're here to simplify it for you.`}
             </p>
           </div>
           <div className="mission-image">

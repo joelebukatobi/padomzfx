@@ -47,7 +47,11 @@ export default function Home() {
           </div>
           <div className="course-content">
             <div className="course-content--card">
-              <div className="course-content--card--icon"></div>
+              <div className="course-content--card--icon">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-clock`} />
+                </svg>
+              </div>
               <div className="course-content--card--text">
                 <h5>Structured Learning</h5>
                 <p>
@@ -57,7 +61,11 @@ export default function Home() {
               </div>
             </div>
             <div className="course-content--card">
-              <div className="course-content--card--icon"></div>
+              <div className="course-content--card--icon">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-clock`} />
+                </svg>
+              </div>
               <div className="course-content--card--text">
                 <h5>Real-Time Market Insights</h5>
 
@@ -68,7 +76,11 @@ export default function Home() {
               </div>
             </div>
             <div className="course-content--card">
-              <div className="course-content--card--icon"></div>
+              <div className="course-content--card--icon">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-clock`} />
+                </svg>
+              </div>
               <div className="course-content--card--text">
                 <h5>Proven Success Stories</h5>
                 <p>
@@ -79,7 +91,11 @@ export default function Home() {
               </div>
             </div>
             <div className="course-content--card">
-              <div className="course-content--card--icon"></div>
+              <div className="course-content--card--icon">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-clock`} />
+                </svg>
+              </div>
               <div className="course-content--card--text">
                 <h5>Comprehensive Curriculum</h5>
                 <p>

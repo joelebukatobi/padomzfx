@@ -76,6 +76,28 @@ export const Footer = () => {
               </Link>
             </li>
           </ul>
+          <ul>
+            <li>
+              <svg>
+                <use href={`/images/sprite.svg#icon-facebook`} />
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use href={`/images/sprite.svg#icon-instagram`} />
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use href={`/images/sprite.svg#icon-twitter`} />
+              </svg>
+            </li>
+            <li>
+              <svg>
+                <use href={`/images/sprite.svg#icon-youtube`} />
+              </svg>
+            </li>
+          </ul>
         </div>
       </div>
       <p className="footer-copyright">
