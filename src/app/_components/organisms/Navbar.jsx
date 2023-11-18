@@ -47,7 +47,7 @@ export const Navbar = () => {
     <div className="container">
       <nav className="navbar">
         <a href="/">
-          <Image width="215" height="52" src={Logo} alt="Logo" />
+          <Image width="" height="" src={Logo} alt="Logo" />
         </a>
         <div className="navbar-menu lg:hidden">
           <svg onClick={toggleMenu}>
