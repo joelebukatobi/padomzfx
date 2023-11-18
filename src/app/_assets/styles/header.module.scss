@@ -1,5 +1,5 @@
 .landing-header {
-  @apply bg-[#0e1d2b] pt-[2.4rem] lg:px-[4.8rem] relative lg:h-[103.5rem];
+  @apply bg-[#0e1d2b] pt-[2.4rem] lg:px-[4.8rem] relative lg:h-[103.5rem] overflow-hidden lg:overflow-auto;
 
   &-content {
     @apply mt-[14.152rem] text-white lg:flex justify-between lg:px-[4rem];
@@ -26,7 +26,7 @@
   }
 
   &-waves {
-    @apply lg:absolute left-0 bottom-[-1.6rem] w-[100%];
+    @apply lg:absolute mb-[-.8rem] lg:left-0 lg:bottom-[-1.6rem] w-[200%] lg:w-[100%];
   }
 }
 
