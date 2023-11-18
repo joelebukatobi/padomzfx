@@ -3,11 +3,11 @@
   & .header {
     &-contact {
       //
-      @apply pl-[10.4rem] w-[60.35%] pt-[13.52rem] pb-[15.1rem];
+      @apply lg:pl-[10.4rem] lg:w-[60.35%] pt-[13.52rem] pb-[15.1rem];
       //
       & p {
         &:first-of-type {
-          @apply bg-[#F7CE5B] p-[1.6rem] uppercase font-bold mb-[2.4rem] w-[20%] xl:w-[20%] text-center text-[1.4rem];
+          @apply bg-[#F7CE5B] p-[1.6rem] uppercase font-bold mb-[2.4rem] w-[20rem] text-center text-[1.4rem];
         }
       }
       //
@@ -18,11 +18,11 @@
   }
 
   &-row {
-    @apply w-[80%] m-auto flex gap-x-[3.2rem] py-[16rem];
+    @apply lg:w-[80%] m-auto flex flex-col lg:flex-row lg:gap-x-[3.2rem] py-[16rem] space-y-[8rem] lg:space-y-0;
   }
 
   &-info {
-    @apply w-[37.71%] space-y-[4rem] border-[.1rem] px-[5.6rem] pt-[4rem] border-[#009F0B] h-auto;
+    @apply lg:w-[37.71%] space-y-[4rem] border-[.1rem] px-[5.6rem] py-[4rem] border-[#009F0B] h-auto;
   }
 
   &-card {
@@ -44,7 +44,7 @@
   }
 
   &-form {
-    @apply w-[59.12%];
+    @apply lg:w-[59.12%];
 
     & button {
       @apply bg-[#009F0B] text-[#ffffff] w-full mt-[3.2rem];
