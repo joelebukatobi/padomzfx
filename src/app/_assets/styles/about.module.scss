@@ -1,12 +1,172 @@
 .about {
   //
   & .header {
-    &-training {
+    &-about {
       //
-      @apply w-[60.09%] pt-[11.452rem] pb-[14.3rem];
+      @apply pl-[10.4rem] w-[73.88%] pt-[11.452rem] pb-[14.3rem];
       //
       & h3 {
-        @apply font-extrabold font-epilogue w-[73.88%] text-[#ffffff];
+        @apply font-extrabold font-epilogue xl:w-[73.88%] text-[#ffffff];
+      }
+    }
+  }
+
+  & .academy {
+    @apply w-[91.66%] gap-x-[3.2rem] m-auto flex justify-center pt-[16rem] pb-[20rem];
+
+    &-image {
+      @apply w-[48.07%];
+    }
+    //
+    &-content {
+      @apply flex flex-col justify-between w-[49.3%];
+    }
+    //
+    &-text {
+      & h4 {
+        @apply font-epilogue font-extrabold mb-[1.6rem];
+      }
+
+      & p {
+        @apply w-[85%];
+        //
+      }
+    }
+    //
+    &-group {
+      @apply flex;
+    }
+    //
+    &-right {
+      @apply relative w-[48.93%];
+      //
+      & p {
+        @apply w-[74.2%] mt-[1.6rem];
+      }
+      &-label {
+        @apply absolute top-[12rem] left-[16rem];
+        & p {
+          @apply bg-[#009F0B] px-[2.4rem] w-full font-bold text-[#ffffff] py-[1.6rem];
+        }
+      }
+    }
+    //
+    &-left {
+      @apply relative  w-[48.93%];
+      //
+      & p {
+        @apply w-[74.2%] mt-[1.6rem];
+      }
+      &-label {
+        @apply absolute top-[12rem] left-[13.5rem];
+        & p {
+          @apply bg-[#009F0B] px-[2.4rem] w-full font-bold text-[#ffffff] py-[1.6rem];
+        }
+      }
+    }
+  }
+
+  & .advantage {
+    @apply w-[93.5%] m-auto mb-[20rem];
+    & header {
+      @apply flex flex-col items-center;
+      & h4 {
+        @apply font-epilogue font-extrabold;
+      }
+      & p {
+        @apply w-[58.17%] text-center;
+      }
+    }
+
+    &-row {
+      @apply flex justify-between mt-[4rem];
+    }
+
+    &-card {
+      @apply relative py-[3.2rem] px-[2.4rem] pl-[4rem];
+      & p {
+        &:first-of-type {
+          @apply font-bold mb-[1.6rem];
+        }
+      }
+
+      &:nth-of-type(2) {
+        @apply border-x-[.1rem] border-[#0eid2b];
+      }
+    }
+
+    &-number {
+      @apply absolute left-[2.4rem] top-[-1.6rem];
+      & h1 {
+        @apply font-epilogue font-extrabold text-[#009F0B]/5;
+      }
+    }
+  }
+
+  & .mission {
+    @apply bg-[#009F0B] mb-[32rem];
+
+    & .container {
+      @apply flex relative;
+    }
+
+    &-text {
+      @apply w-[41.66%] pt-[14rem] pb-[21rem] text-white;
+      & p {
+        &:first-of-type {
+          @apply w-[46.92%] text-center bg-black uppercase p-[1.6rem];
+        }
+
+        &:last-of-type {
+          @apply pt-[1.6rem];
+        }
+      }
+
+      & h4 {
+        @apply pt-[3.2rem] font-extrabold;
+      }
+    }
+
+    &-image {
+      @apply w-[56.89%] absolute right-0;
+    }
+  }
+
+  & .approach {
+    @apply w-full justify-center m-auto flex gap-x-[9.6rem] items-end mb-[22.4rem];
+
+    &-content {
+      @apply w-[47.29%];
+      & header {
+        & h4 {
+          @apply font-epilogue font-extrabold mb-[1.6rem];
+        }
+
+        & p {
+          @apply mb-[4.8rem];
+        }
+      }
+    }
+
+    &-list {
+      @apply pt-[3.2rem] w-[32.11%] space-y-[4rem];
+    }
+
+    &-card {
+      @apply flex gap-x-[2.4rem];
+    }
+
+    &-icon {
+      & svg {
+        @apply h-[2.8rem] w-[2.8rem];
+      }
+    }
+
+    &-text {
+      & p {
+        &:first-of-type {
+          @apply font-bold mb-[1.6rem];
+        }
       }
     }
   }
