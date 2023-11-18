@@ -1,6 +1,7 @@
 .navbar {
   //
-  @apply h-[8rem] bg-[#ffffff] rounded-[.4rem] pt-[1.6rem] pr-[3.2rem] pl-[3.2rem] pb-[1.6rem] flex justify-between items-center;
+  @apply h-[8rem] lg:mx-0 bg-[#ffffff] rounded-[.4rem] pt-[1.6rem] pr-[3.2rem] pl-[3.2rem] pb-[1.6rem] flex justify-between items-center w-full relative;
+
   //
   & a {
     & svg {
@@ -8,10 +9,15 @@
     }
   }
   //
+
+  &-menu {
+    & svg {
+      @apply h-[2.4rem] w-[2.4rem];
+    }
+  }
   & ul {
-    @apply flex;
     & li {
-      @apply text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish font-medium;
+      @apply text-[2rem] font-bold lg:text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish lg:font-medium;
     }
   }
 }

@@ -19,9 +19,6 @@ export default function Home() {
         <div className="potential">
           <div className="potential-image">
             <Image src={PotentialImage} width="" height="" alt="unlock your potential" />
-            <div className="potential-after">
-              <Image src={UnlockImage} width="" height="" alt="unlock your potential" />
-            </div>
           </div>
           <div className="potential-text">
             <h4>Unlock Your Trading Potential</h4>

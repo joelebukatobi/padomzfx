@@ -1,0 +1,43 @@
+.team {
+  //
+  & .header {
+    &-team {
+      //
+      @apply pl-[10.4rem] w-[46.09%] pt-[13.52rem] pb-[15.1rem];
+      //
+      & p {
+        &:first-of-type {
+          @apply bg-[#F7CE5B] p-[1.6rem] uppercase font-bold mb-[2.4rem] w-[50%] xl:w-[20%] text-center text-[1.4rem];
+        }
+      }
+      //
+      & h3 {
+        @apply font-extrabold font-epilogue text-[#ffffff];
+      }
+    }
+  }
+
+  & .team {
+    @apply w-[91.34%] m-auto flex gap-x-[2rem] gap-y-[7.2rem] flex-wrap py-[16rem];
+
+    &-card {
+      @apply w-[23.68%];
+
+      & img {
+        @apply w-[100%];
+      }
+
+      & footer {
+        @apply mt-[2.4rem];
+        //
+        & h5 {
+          @apply font-epilogue font-extrabold text-center leading-[2.4rem] capitalize;
+        }
+
+        & p {
+          @apply text-center text-[#009F0B] font-bold leading-[2.4rem] uppercase;
+        }
+      }
+    }
+  }
+}

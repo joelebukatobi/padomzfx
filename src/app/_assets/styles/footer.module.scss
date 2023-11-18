@@ -3,20 +3,20 @@
   @apply bg-[#0E1D2B]  text-white;
   //
   &-top {
-    @apply flex justify-between pt-[9.6rem] px-[14rem] pb-[15.4rem];
+    @apply flex flex-col lg:flex-row lg:justify-between pt-[9.6rem] lg:px-[14rem] pb-[15.4rem] space-y-[7.2rem];
     //
     div {
       //
       &:nth-of-type(1) {
-        @apply w-[20.17%] h-[5.6rem];
+        @apply w-[75%] lg:w-[20.17%] lg:h-[5.6rem];
       }
       //
       &:nth-of-type(2) {
-        @apply w-[28.8%] flex justify-between;
+        @apply lg:w-[28.8%] flex space-x-[10.4rem] lg:space-x-0 lg:justify-between;
       }
       //
       &:nth-of-type(3) {
-        @apply w-[23.17%];
+        @apply lg:w-[23.17%];
         //
         & ul {
           & li {

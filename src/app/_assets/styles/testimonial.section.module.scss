@@ -2,13 +2,13 @@
   @apply border-y-[10.4rem] border-[#009F0B];
 
   & .container {
-    @apply flex justify-between items-end w-[93.91%] py-[21.1rem];
+    @apply flex flex-col lg:flex-row lg:justify-between lg:items-end lg:w-[93.91%] py-[21.1rem];
   }
 
   &--heading {
-    @apply w-[65.44%];
+    @apply lg:w-[65.44%];
     & h2 {
-      @apply font-epilogue font-extrabold text-[#009F0B];
+      @apply font-epilogue font-extrabold text-[#009F0B] text-[4.8rem] lg:text-[6.2rem];
       & span {
         background: linear-gradient(261deg, #009f0b 6.62%, #0e1d2b 94.96%);
         background-clip: text;
@@ -19,7 +19,7 @@
   }
 
   &--image {
-    @apply flex items-end space-x-[1.6rem] w-[28.49%];
+    @apply mt-[4.8rem] lg:mt-0 flex items-end space-x-[1.6rem] lg:w-[28.49%];
     & img {
       @apply w-[14.8rem] h-[6rem];
     }

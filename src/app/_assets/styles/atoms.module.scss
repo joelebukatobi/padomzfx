@@ -1,3 +1,11 @@
 button {
-  @apply h-[6.4rem] text-[1.6rem] font-bold leading-[2rem] px-[6.4rem];
+  @apply h-[6.4rem] text-[1.6rem] font-bold leading-[2rem];
+}
+
+input {
+  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] py-[1.6rem] px-[2.4rem] w-[100%];
+}
+
+textarea {
+  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] py-[1.6rem] px-[2.4rem] w-full h-[24rem];
 }

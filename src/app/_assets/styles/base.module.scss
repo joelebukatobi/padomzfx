@@ -39,6 +39,10 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //10px/16px = 62.5% 1rem
   //
+  @media (min-width: 390px) and (max-width: 768px) {
+    // font-size: 60%;
+  }
+  //
   @media all and (min-width: 1024px) and (max-width: 1440px) {
     font-size: 55%;
   }

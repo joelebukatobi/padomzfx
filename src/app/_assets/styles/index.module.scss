@@ -1,18 +1,14 @@
 .index {
   & .potential {
     //
-    @apply w-[88.30%] m-auto flex justify-between items-center pt-[18rem] pb-[20rem];
+    @apply lg:w-[88.30%] m-auto flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center pt-[18rem] pb-[20rem];
     //
     &-image {
-      @apply w-[43.10%] relative;
-    }
-    //
-    &-after {
-      @apply w-[74.52%] absolute left-[50%] top-[65%];
+      @apply mt-[8rem] lg:mt-0 lg:w-[43.10%] relative;
     }
 
     &-text {
-      @apply w-[47.18%];
+      @apply lg:w-[47.18%];
 
       & h4 {
         @apply font-epilogue font-bold mb-[1.6rem] w-[83.84%];
@@ -29,11 +25,11 @@
   }
 
   & .course {
-    @apply w-[86.21%] m-auto mt-[14.1rem];
+    @apply lg:w-[86.21%] m-auto mt-[14.1rem];
     //
     &-header {
       & h3 {
-        @apply font-epilogue font-bold w-[42%];
+        @apply font-epilogue font-bold lg:w-[42%];
         & span {
           @apply text-[#009F0B];
         }
@@ -44,7 +40,7 @@
       @apply mt-[9.6rem] flex justify-between flex-wrap;
       //
       &--card {
-        @apply w-[39%] mb-[12.1rem] flex gap-x-[1.6rem];
+        @apply lg:w-[39%] mb-[12.1rem] flex gap-x-[1.6rem];
         //
         &--text {
           & h5 {

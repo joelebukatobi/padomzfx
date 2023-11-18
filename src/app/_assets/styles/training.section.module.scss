@@ -1,11 +1,11 @@
 .training-register {
   @apply bg-[#009F0B]/5;
   & .container {
-    @apply flex justify-between;
+    @apply flex flex-col-reverse lg:flex-row justify-between;
   }
 
   &--content {
-    @apply w-[50%] bg-[#0E1D2B] pt-[7.2rem] px-[4.0rem] text-white;
+    @apply lg:w-[50%] bg-[#0E1D2B] pt-[7.2rem] px-[4.0rem] text-white;
 
     & header {
       & p {
@@ -24,7 +24,7 @@
     }
     //
     & ul {
-      @apply mt-[2.4rem] flex space-x-[7.2rem];
+      @apply mt-[2.4rem] flex justify-between lg:justify-start lg:space-x-[7.2rem];
       & li {
         @apply flex gap-x-[1.6rem];
         //
@@ -37,9 +37,11 @@
         }
       }
     }
+    //
     & div {
-      @apply mt-[7.2rem] space-x-[2.4rem];
+      @apply mt-[7.2rem] w-full lg:w-[77.91%] flex gap-x-[2.4rem] mb-[3.2rem];
       & button {
+        @apply w-[50%];
         &:first-of-type {
           @apply bg-[#009F0B];
         }
@@ -51,6 +53,6 @@
   }
   //
   &--image {
-    @apply w-[50%];
+    @apply lg:w-[50%];
   }
 }
