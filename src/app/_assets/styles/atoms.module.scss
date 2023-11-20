@@ -4,15 +4,27 @@ button {
 
 input {
   @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%];
+  //
+  &:focus {
+    @apply outline-none border-[.1rem] border-[#0E1D2B];
+  }
 }
 
 textarea {
   @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%] h-[24rem];
+  //
+  &:focus {
+    @apply outline-none border-[.1rem] border-[#0E1D2B];
+  }
 }
 
 //Select
 select {
   @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem]  bg-transparent appearance-none relative z-[2] w-[100%];
+  //
+  &:focus {
+    @apply outline-none border-[.1rem] border-[#0E1D2B];
+  }
 }
 
 .select {
