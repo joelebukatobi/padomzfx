@@ -111,11 +111,11 @@
     }
 
     &-content {
-      @apply lg:w-[62.72%] px-[6.4rem] pt-[6.4rem] bg-[#ffffff]/[10%] relative pb-[12rem] lg:pb-[0];
+      @apply lg:w-[62.72%] px-[6.4rem] pt-[6.4rem] bg-[#ffffff]/[10%] relative pb-[12rem] lg:pb-[5.6rem];
     }
 
     &-text {
-      @apply mb-[4rem] lg:mb-[9.6rem];
+      @apply mb-[4rem] lg:mb-[8rem];
 
       & p {
         @apply leading-[3rem] text-[#ffffff];
