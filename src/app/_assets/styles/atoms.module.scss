@@ -3,36 +3,22 @@ button {
 }
 
 input {
-  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] py-[1.6rem] px-[2.4rem] w-[100%];
+  @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%];
 }
 
 textarea {
-  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] py-[1.6rem] px-[2.4rem] w-full h-[24rem];
+  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%] h-[24rem];
 }
 
 //Select
 select {
-  @apply w-full rounded-[.4rem] border-gray-200 border-[.1rem] h-[4rem] px-[1.6rem] pr-[3.2rem] bg-transparent appearance-none relative z-[2];
-  // Select Hover
-  &:hover {
-    @apply border-blue-500 border-[.24rem];
-  }
-  // Select Focus
-  &:focus {
-    @apply focus:outline-none border-[.24rem];
-  }
-  // Select Active
-  &:active {
-    @apply focus:outline-none;
-  }
+  @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem]  bg-transparent appearance-none relative z-[2] w-[100%];
 }
 
 .select {
-  @apply relative flex items-center;
+  @apply relative flex items-center justify-center w-[100%];
   //
   & svg {
-    @apply absolute end-[1.6rem] hover:stroke-0;
-    height: 1.6rem !important;
-    width: 1.6rem !important;
+    @apply absolute  z-[2000]  h-[2.4rem] w-[2.4rem] right-[1.6rem] top-[1.6rem];
   }
 }

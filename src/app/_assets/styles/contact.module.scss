@@ -44,7 +44,19 @@
   }
 
   &-form {
-    @apply lg:w-[59.12%];
+    @apply lg:w-[59.12%] space-y-[2.4rem];
+
+    & .form-group {
+      &:last-of-type {
+        // & input,
+        // & select {
+        //   // @apply w-1/2;
+        // }
+      }
+      & .input-group {
+        @apply space-y-0;
+      }
+    }
 
     & button {
       @apply bg-[#009F0B] text-[#ffffff] w-full mt-[3.2rem];

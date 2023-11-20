@@ -15,6 +15,12 @@
     & svg {
       @apply absolute top-[2.4rem] right-[4rem] h-[2.4rem] w-[2.4rem] cursor-pointer;
     }
+
+    & .select {
+      & svg {
+        @apply h-[2.4rem] w-[2.4rem] right-[1.6rem] top-[1.6rem];
+      }
+    }
   }
 
   & p {

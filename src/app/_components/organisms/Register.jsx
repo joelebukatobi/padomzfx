@@ -4,9 +4,8 @@ import React, { useRef, useEffect } from 'react';
 // Next
 import Image from 'next/image';
 // Components
-import { Button } from '@/_components/atoms/Button';
-import { Input } from '@/_components/atoms/Input';
 import { InputGroup } from '@/_components/molecules/InputGroup';
+import { SelectGroup } from '@/_components/molecules/SelectGroup';
 
 // Images
 import Logo from '@/_assets/images/logo-white.png';
@@ -29,8 +28,11 @@ export const Register = ({ open, close }) => {
         <InputGroup type="email" label="Email" placeholder="name@mail.com" />
 
         <InputGroup type="phone" label="Mobile Number" placeholder="Input phone number" />
-        <InputGroup type="" label="Expertise Level" placeholder="Select your expertise level" />
-        <Button>Proceed to Payment</Button>
+        <SelectGroup name="expertise" label="Expertise Level">
+          <option value="">Option One</option>
+          <option value="">Option One</option>
+          <option value="">Option One</option>
+        </SelectGroup>
       </form>
 
       <p>

@@ -6,9 +6,9 @@ import { Header } from '@/_components/organisms/Header';
 import { Button } from '@/_components/atoms/Button';
 import { Input } from '@/_components/atoms/Input';
 import { TextArea } from '@/_components/atoms/TextArea';
-import { Register } from '@/_components/organisms/Register';
 // Utils
 import { faqs } from '@/_utils/faqs';
+import { SelectGroup } from '@/_components/molecules/SelectGroup';
 
 export default function Contact() {
   return (
@@ -76,7 +76,11 @@ export default function Contact() {
               <Input type="email" placeholder="Email Address" required="required" />
             </div>
             <div className="form-group">
-              <Input type="text" placeholder="Select Service Type" required="required" name="name" />
+              <SelectGroup name="name">
+                <option value="">Select Service Type</option>
+                <option value="">Option One</option>
+                <option value="">Option One</option>
+              </SelectGroup>
               <Input type="phone" placeholder="Phone Number" required="required" />
             </div>
 

@@ -1,7 +1,10 @@
 .form-group {
   @apply flex gap-x-[2.4rem];
-}
 
+  & > * {
+    @apply w-1/2;
+  }
+}
 .input-group {
   @apply space-y-[1.6rem];
 }
