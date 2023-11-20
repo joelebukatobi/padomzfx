@@ -1,22 +1,31 @@
 'use client';
+// React
+import React, { useState } from 'react';
 // Next
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 // Components
 import { Header } from '@/_components/organisms/Header';
 import { Button } from '@/_components/atoms/Button';
+import { Register } from '@/_components/organisms/Register';
 
 // Image
 import TrainingInfo from '@/_assets/images/training-info.png';
 import ReviewImage from '@/_assets/images/review-image.png';
 
 export default function Training() {
-  const navigate = useRouter();
-  const handleClick = () => {
-    navigate.push('/training/info');
+  const [modal, setModal] = useState(false);
+  //
+  const openModal = () => {
+    setModal(true);
+  };
+  //
+  const closeModal = () => {
+    setModal(false);
   };
   return (
     <div className="training">
+      <Register open={modal} close={closeModal} />
       <Header>
         <div className="container">
           <div className="header-info">
@@ -45,7 +54,7 @@ export default function Training() {
                 </p>
               </header>
               <div>
-                <Button onClick={handleClick}>Register</Button>
+                <Button onClick={openModal}>Register</Button>
               </div>
             </div>
 

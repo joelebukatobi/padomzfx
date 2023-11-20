@@ -1,15 +1,27 @@
 'use client';
+import React, { useState } from 'react';
 // Next
 import Image from 'next/image';
 // Components
 import { Header } from '@/_components/organisms/Header';
 import { TrainingSection } from '@/_components/organisms/TrainingSection';
 import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
+import { Register } from '@/_components/organisms/Register';
 //
 
 export default function Training() {
+  const [modal, setModal] = useState(false);
+  //
+  const openModal = () => {
+    setModal(true);
+  };
+  //
+  const closeModal = () => {
+    setModal(false);
+  };
   return (
     <div className="training">
+      <Register open={modal} close={closeModal} />
       <Header>
         <div className="container">
           <div className="header-training">
@@ -24,8 +36,8 @@ export default function Training() {
         </div>
       </Header>
       <div className="training-available">
-        <TrainingSection />
-        <TrainingSection />
+        <TrainingSection openModal={openModal} />
+        <TrainingSection openModal={openModal} />
       </div>
       <TestimonialSection />
     </div>

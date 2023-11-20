@@ -6,6 +6,7 @@ import { Header } from '@/_components/organisms/Header';
 import { Button } from '@/_components/atoms/Button';
 import { Input } from '@/_components/atoms/Input';
 import { TextArea } from '@/_components/atoms/TextArea';
+import { Register } from '@/_components/organisms/Register';
 // Utils
 import { faqs } from '@/_utils/faqs';
 
@@ -70,11 +71,11 @@ export default function Contact() {
             </div>
           </div>
           <form action="" className="contact-form">
-            <div className="input-group">
+            <div className="form-group">
               <Input type="text" placeholder="Full Name" required="required" name="name" />
               <Input type="email" placeholder="Email Address" required="required" />
             </div>
-            <div className="input-group">
+            <div className="form-group">
               <Input type="text" placeholder="Select Service Type" required="required" name="name" />
               <Input type="phone" placeholder="Phone Number" required="required" />
             </div>
