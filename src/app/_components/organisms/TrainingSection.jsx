@@ -1,20 +1,18 @@
-'use client';
+"use client";
 //
-import React, { useState } from 'react';
 // Next
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 // Components
-import { Button } from '@/_components/atoms/Button';
-import { Register } from '@/_components/organisms/Register';
+import { Button } from "@/_components/atoms/Button";
 // Images
-import TrainingImage from '@/_assets/images/training-image.png';
+import TrainingImage from "@/_assets/images/training-image.png";
 //
 
 export const TrainingSection = ({ className, openModal, closeModal }) => {
   const navigate = useRouter();
   const openInfo = () => {
-    navigate.push('/training/info');
+    navigate.push("/training/info");
   };
 
   return (
@@ -26,9 +24,11 @@ export const TrainingSection = ({ className, openModal, closeModal }) => {
               <p>Upcoming register</p>
               <h4>Mastering Forex Trading - A Comprehensive Guide</h4>
               <p>
-                Are you looking to unlock the potential of the Forex market and become a skilled trader? The course is
-                designed for beginners and intermediate traders who want to develop a solid understanding of the Forex
-                market, trading strategies...
+                Are you ready to Unleash Your Forex Trading Potential? This
+                course caters to beginners and intermediate traders aiming to
+                gain a robust grasp of the Forex market. Explore trading
+                strategies and foundational concepts in this comprehensive
+                program designed for those eager to evolve into skilled traders.
               </p>
             </header>
             <ul>
@@ -51,7 +51,12 @@ export const TrainingSection = ({ className, openModal, closeModal }) => {
             </div>
           </div>
           <div className="training-register--image">
-            <Image src={TrainingImage} width="" height="" alt="Training Image" />
+            <Image
+              src={TrainingImage}
+              width=""
+              height=""
+              alt="Training Image"
+            />
           </div>
         </div>
       </section>

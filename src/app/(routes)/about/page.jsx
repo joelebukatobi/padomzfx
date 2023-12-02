@@ -1,14 +1,14 @@
-'use client';
+"use client";
 // Next
-import Image from 'next/image';
+import Image from "next/image";
 // Components
-import { Header } from '@/_components/organisms/Header';
+import { Header } from "@/_components/organisms/Header";
 // Images
-import AcademyMain from '@/_assets/images/academy-main.png';
-import AcademyLeft from '@/_assets/images/academy-left.png';
-import AcademyRight from '@/_assets/images/academy-right.png';
-import MissionImage from '@/_assets/images/mission-value.png';
-import ApproachImage from '@/_assets/images/approach-image.png';
+import AcademyLeft from "@/_assets/images/academy-left.png";
+import AcademyMain from "@/_assets/images/academy-main.png";
+import AcademyRight from "@/_assets/images/academy-right.png";
+import ApproachImage from "@/_assets/images/approach-image.png";
+import MissionImage from "@/_assets/images/mission-value.png";
 //
 export default function About() {
   return (
@@ -28,13 +28,13 @@ export default function About() {
           </div>
           <div className="academy-content">
             <div className="academy-text">
-              <h4>The Academy</h4>
+              <h4>About PadomzFx</h4>
               <p>
-                {`   Welcome to PadomzFx Academy, where financial success begins with knowledge and support. We're more than
-              just an academy; we're your partners on the journey to financial empowerment. We believe in a hands-on,
-              practical approach to learning. Our courses are designed to give you the knowledge you need, but we also
-              emphasize real-world practice. You'll have access to live trading sessions, market analysis, and ongoing
-              support to ensure your success.`}
+                {` Welcome to PadomzFx Academy, your Gateway to Financial Success through Knowledge and
+Support. As your dedicated partners in financial empowerment, we offer more than mere
+education—we're committed to your success. Our approach blends theoretical knowledge with
+hands-on practice, providing live trading sessions, market analysis, and continuous support. Join us
+to gain essential knowledge and practical experience for your financial journey.`}
               </p>
             </div>
             <div className="academy-group">
@@ -62,8 +62,9 @@ export default function About() {
           <header>
             <h4>The Trifecta Advantage</h4>
             <p>
-              Discover unparalleled opportunities for growth with the Trifecta Advantage at PadomzFx Academy. Our
-              commitment to your success extends beyond education.
+              Discover unparalleled opportunities for growth with the Trifecta
+              Advantage at PadomzFx Academy. Our commitment to your success
+              extends beyond education.
             </p>
           </header>
 
@@ -74,8 +75,9 @@ export default function About() {
               </div>
               <p>Community</p>
               <p>
-                Joining PadomzFx Academy means becoming part of a vibrant and supportive community. Connect with fellow
-                traders, share experiences, and learn from each other.
+                PadomzFx consists of a thriving and supportive community. Engage
+                with like-minded traders, exchange experiences, and benefit from
+                collaborative learning opportunities.
               </p>
             </div>
             <div className="advantage-card">
@@ -84,8 +86,9 @@ export default function About() {
               </div>
               <p>Expertise</p>
               <p>
-                Joining PadomzFx Academy means becoming part of a vibrant and supportive community. Connect with fellow
-                traders, share experiences, and learn from each other.
+                At PadomzFx Academy, expertise is not just an aspiration; it's
+                our cornerstone. Our mission is to cultivate expertise in every
+                potential trader who walks through our doors.
               </p>
             </div>
             <div className="advantage-card">
@@ -94,8 +97,8 @@ export default function About() {
               </div>
               <p>Funding Opportunities</p>
               <p>
-                {`    We're not just about education; we're also about providing you with funding opportunities to kickstart
-                your trading career. We believe in your potential, and we're ready to invest in it.`}
+                {`We understand that access to capital is crucial for forex traders starting their journey, which is why
+we offer unique funding programs to support your ambitions. We fund, you make money.`}
               </p>
             </div>
           </div>
@@ -108,9 +111,11 @@ export default function About() {
             <p>Mission • Vision • Value</p>
             <h4>What We Stand for</h4>
             <p>
-              {`  At PadomzFx Academy, our mission is clear - to empower individuals like you with the skills, knowledge,
-              and funding needed to build a thriving career in the financial markets. We understand that the world of
-              trading and investing may seem complex, but we're here to simplify it for you.`}
+              At PadomzFx Academy, our mission is clear - to empower individuals
+              like you with the skills, knowledge, and funding needed to build a
+              thriving career in the financial markets. We understand that the
+              world of trading and investing may seem complex, but we're here to
+              simplify it for you.
             </p>
           </div>
           <div className="mission-image">
@@ -125,8 +130,9 @@ export default function About() {
             <header>
               <h4>Our Approach</h4>
               <p>
-                At PandomFx, we believe in a revolutionary approach to Forex education and trading that sets us apart.
-                Our unique methodology is designed to empower you at every step of your trading journey.
+                At PadomzFx, we believe in a revolutionary approach to Forex
+                Trading education that sets us apart. Our unique methodology is
+                designed to empower you at every step of your trading journey.
               </p>
             </header>
             <Image src={ApproachImage} height="" width="" alt="" />
@@ -141,8 +147,9 @@ export default function About() {
               <div className="approach-text">
                 <p>Learn with Us</p>
                 <p>
-                  Gain expertise from seasoned professionals. Our training equips you with essential skills to navigate
-                  Forex markets confidently.
+                  Gain expertise from seasoned professionals. Our training
+                  equips you with essential skills to navigate Forex markets
+                  confidently.
                 </p>
               </div>
             </div>
@@ -155,8 +162,9 @@ export default function About() {
               <div className="approach-text">
                 <p>Get Funded</p>
                 <p>
-                  Qualify for a live trading account with financial backing from PandomFx. Trade in a real-world
-                  environment without risking your own capital.
+                  Qualify for a live trading account with financial backing from
+                  PadomzFx. Trade in a real-world environment without risking
+                  your own capital.
                 </p>
               </div>
             </div>
@@ -169,8 +177,9 @@ export default function About() {
               <div className="approach-text">
                 <p>Start Trading</p>
                 <p>
-                  Apply your skills in a real-world trading environment. Practice, refine, and gain the confidence to
-                  make informed decisions.
+                  Apply your skills in a real-world trading environment.
+                  Practice, refine, and gain the confidence to make informed
+                  decisions.
                 </p>
               </div>
             </div>
@@ -183,8 +192,9 @@ export default function About() {
               <div className="approach-text">
                 <p>Earn as you Learn</p>
                 <p>
-                  As you reach trading milestones, enjoy the rewards. Our performance-based compensation model lets your
-                  success translate directly into financial gains.
+                  As you reach trading milestones, enjoy the rewards. Our
+                  performance-based compensation model lets your success
+                  translate directly into financial gains.
                 </p>
               </div>
             </div>
