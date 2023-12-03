@@ -1,20 +1,29 @@
 'use client';
+import React, { useState } from 'react';
 // Next
 import Image from 'next/image';
 // Components
 import { Button } from '@/_components/atoms/Button';
 import { TrainingSection } from '@/_components/organisms/TrainingSection';
 import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
+import { Register } from '@/_components/organisms/Register';
 // Images
 import PotentialImage from '@/_assets/images/potential-image.png';
-import UnlockImage from '@/_assets/images/unlock-image.png';
-import TrainingImage from '@/_assets/images/training-image.png';
-import TestimonialImage from '@/_assets/images/testimonial-image.png';
 //
 
 export default function Home() {
+  const [modal, setModal] = useState(false);
+  //
+  const openModal = () => {
+    setModal(true);
+  };
+  //
+  const closeModal = () => {
+    setModal(false);
+  };
   return (
     <div className="index">
+      <Register open={modal} close={closeModal} />
       <section className="container">
         <div className="potential">
           <div className="potential-image">
@@ -106,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <TrainingSection />
+      <TrainingSection openModal={openModal} />
       <TestimonialSection />
     </div>
   );

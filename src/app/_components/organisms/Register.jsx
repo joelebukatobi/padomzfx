@@ -9,6 +9,7 @@ import { SelectGroup } from '@/_components/molecules/SelectGroup';
 
 // Images
 import Logo from '@/_assets/images/logo-white.png';
+import { Button } from '../atoms/Button';
 
 //
 
@@ -20,6 +21,10 @@ export const Register = ({ open, close }) => {
         <svg onClick={() => close()}>
           <use href={`/images/sprite.svg#icon-close`} />
         </svg>
+        <div className="form-group">
+          <InputGroup type="text" label="Training Amount" placeholder={`🇳🇬 ${`₦`}50,500`} disabled />
+          <InputGroup label="Training Date" placeholder="12 December 2023" disabled />
+        </div>
         <div className="form-group">
           <InputGroup type="text" label="First Name" placeholder="Input first name" />
           <InputGroup label="First Name" placeholder="Input last name" />
@@ -33,6 +38,8 @@ export const Register = ({ open, close }) => {
           <option value="">Option One</option>
           <option value="">Option One</option>
         </SelectGroup>
+
+        <Button>Proceed to Payment</Button>
       </form>
 
       <p>

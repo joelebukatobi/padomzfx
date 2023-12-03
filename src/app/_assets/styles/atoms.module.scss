@@ -1,17 +1,21 @@
 button {
-  @apply h-[6.4rem] text-[1.6rem] font-bold leading-[2rem];
+  @apply h-[4.8rem] xl:h-[6.4rem] text-[1.6rem] font-bold leading-[2rem];
 }
 
 input {
-  @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%];
+  @apply h-[4rem] xl:h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%];
   //
   &:focus {
     @apply outline-none border-[.1rem] border-[#0E1D2B];
   }
+
+  &:disabled {
+    @apply bg-[#DDE3F0] font-bold;
+  }
 }
 
 textarea {
-  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem] w-[100%] h-[24rem];
+  @apply border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] pt-[1.6rem] px-[2.4rem] w-[100%] h-[24rem];
   //
   &:focus {
     @apply outline-none border-[.1rem] border-[#0E1D2B];
@@ -20,7 +24,7 @@ textarea {
 
 //Select
 select {
-  @apply h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem]  bg-transparent appearance-none relative z-[2] w-[100%];
+  @apply h-[4rem] xl:h-[5.6rem] border-[.1rem] border-[#0E1D2B]/[12%] leading-[2.4rem] text-[1.4rem] text-[#1C1E1F] px-[2.4rem]  bg-transparent appearance-none relative z-[2] w-[100%];
   //
   &:focus {
     @apply outline-none border-[.1rem] border-[#0E1D2B];
@@ -31,6 +35,6 @@ select {
   @apply relative flex items-center justify-center w-[100%];
   //
   & svg {
-    @apply absolute  z-[2000]  h-[2.4rem] w-[2.4rem] right-[1.6rem] top-[1.6rem];
+    @apply absolute  z-[2000]  h-[2.4rem] w-[2.4rem] right-[1.6rem] top-[.8rem] xl:top-[1.6rem];
   }
 }

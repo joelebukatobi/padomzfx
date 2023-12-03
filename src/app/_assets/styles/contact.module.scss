@@ -62,4 +62,48 @@
       @apply bg-[#009F0B] text-[#ffffff] w-full mt-[3.2rem];
     }
   }
+
+  .faqs {
+    @apply w-full bg-[#009F0B]/5 py-[12.8rem];
+    //
+    & .container {
+      @apply lg:w-[58%] mx-auto;
+    }
+    //
+
+    &-header {
+      & h4 {
+        @apply font-bold text-center text-[#0E1D2B];
+      }
+    }
+
+    &-list {
+      @apply w-[100%];
+      //
+      & li {
+        @apply space-y-[2.4rem] py-[4rem] border-b-[.1rem] border-[#DDE3f0];
+        //
+        & header {
+          @apply flex justify-between;
+
+          & h5 {
+            @apply text-[#0E1D2B] font-bold;
+          }
+
+          & svg {
+            @apply h-[2.4rem] w-[2.4rem];
+          }
+        }
+      }
+      //
+    }
+
+    &-footer {
+      @apply mt-[4rem];
+      //
+      & h5 {
+        @apply text-[#009F0B];
+      }
+    }
+  }
 }

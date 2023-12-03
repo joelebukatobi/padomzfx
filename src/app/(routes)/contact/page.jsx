@@ -1,6 +1,8 @@
 'use client';
+import React, { useState } from 'react';
 // Next
 import Image from 'next/image';
+import Link from 'next/link';
 // Components
 import { Header } from '@/_components/organisms/Header';
 import { Button } from '@/_components/atoms/Button';
@@ -11,6 +13,17 @@ import { faqs } from '@/_utils/faqs';
 import { SelectGroup } from '@/_components/molecules/SelectGroup';
 
 export default function Contact() {
+  //
+  // Initialize an array to track the active state for each FAQ item
+  const [activeStates, setActiveStates] = useState(Array(faqs.length).fill(false));
+
+  const handleHeaderClick = (index) => {
+    // Toggle the active state for the clicked FAQ item
+    const newActiveStates = [...activeStates];
+    newActiveStates[index] = !newActiveStates[index];
+    setActiveStates(newActiveStates);
+  };
+  //
   return (
     <div className="contact">
       <Header>
@@ -91,19 +104,31 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* <section className="container">
-        <div className="team">
-          {teams.map(({ id, name, role, image }) => (
-            <div className="team-card" key={id}>
-              <Image src={image} height="" width="" alt="" />
-              <footer>
-                <h5>{name}</h5>
-                <p>{role}</p>
-              </footer>
-            </div>
-          ))}
+      <section className="faqs">
+        <div className="container">
+          <header className="faqs-header">
+            <h4>Frequently Asked Question</h4>
+          </header>
+          <ul className="faqs-list">
+            {faqs.map(({ id, title, content }, index) => (
+              <li key={id}>
+                <header onClick={() => handleHeaderClick(index)}>
+                  <h5>{title}</h5>
+                  <svg className={activeStates[index] ? 'rotate-180' : 'rotate-0'}>
+                    <use href={`/images/sprite.svg#icon-caret`} />
+                  </svg>
+                </header>
+                {activeStates[index] && <p>{content}</p>}
+              </li>
+            ))}
+          </ul>
+          <div className="faqs-footer">
+            <Link href="/">
+              <h5>FAQs</h5>
+            </Link>
+          </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

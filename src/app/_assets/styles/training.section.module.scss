@@ -42,11 +42,20 @@
       @apply mt-[7.2rem] w-full lg:w-[77.91%] flex gap-x-[2.4rem] mb-[3.2rem];
       & button {
         @apply w-[50%];
+        //
         &:first-of-type {
           @apply bg-[#009F0B];
+          &:hover {
+            @apply bg-white text-black;
+          }
         }
+        //
         &:last-of-type {
           @apply bg-[#ffffff] text-black;
+
+          &:hover {
+            @apply bg-[#009F0B] text-white;
+          }
         }
       }
     }

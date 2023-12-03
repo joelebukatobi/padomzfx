@@ -33,6 +33,10 @@
 
       & svg {
         @apply h-[1.2rem] w-[1.2rem];
+
+        &:hover {
+          @apply rotate-45 transition-transform duration-[5000];
+        }
       }
     }
   }

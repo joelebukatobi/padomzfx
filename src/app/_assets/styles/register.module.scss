@@ -1,24 +1,24 @@
 .register {
-  @apply z-[1000] h-[100vh] w-[100%] overflow-hidden bg-[#0E1D2B] top-0 px-[3.2rem] lg:px-[0] left-0 flex-col justify-center items-center space-y-[4rem];
+  @apply z-[1000] h-[100vh] w-[100%] overflow-hidden bg-[#0E1D2B] top-0 px-[3.2rem] lg:px-[0] left-0 flex-col justify-center items-center space-y-[1.6rem] xl:space-y-[4rem];
 
   & img {
     @apply w-[22.9rem] h-[5.5rem];
   }
 
   &-form {
-    @apply bg-[#ffffff] py-[5.6rem] px-[4rem] space-y-[2.4rem] relative;
+    @apply bg-[#ffffff] p-[2.4rem] xl:py-[5.6rem] xl:px-[4rem] space-y-[1rem] xl:space-y-[2.4rem] relative;
 
     & button {
       @apply w-full bg-[#009F0B] text-[#ffffff];
     }
 
     & svg {
-      @apply absolute top-[2.4rem] right-[4rem] h-[2.4rem] w-[2.4rem] cursor-pointer;
+      @apply absolute top-[.8rem]  xl:top-[2.4rem] right-[2.4rem] xl:right-[4rem] h-[2.4rem] w-[2.4rem] cursor-pointer;
     }
 
     & .select {
       & svg {
-        @apply h-[2.4rem] w-[2.4rem] right-[1.6rem] top-[1.6rem];
+        // @apply h-[2.4rem] w-[2.4rem];
       }
     }
   }

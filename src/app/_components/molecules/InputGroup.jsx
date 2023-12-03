@@ -4,7 +4,7 @@ import React from 'react';
 import { Input } from '@/_components/atoms/Input';
 import { Label } from '@/_components/atoms/Label';
 
-export const InputGroup = ({ name, placeholder, icon, value, type, id, required, label }) => {
+export const InputGroup = ({ name, placeholder, icon, value, type, id, required, label, disabled }) => {
   return (
     <div class="input-group">
       <Label htmlFor="" class="">
@@ -19,6 +19,7 @@ export const InputGroup = ({ name, placeholder, icon, value, type, id, required,
           type={type}
           id={id}
           required={required}
+          disabled={disabled}
         />
       </div>
     </div>
