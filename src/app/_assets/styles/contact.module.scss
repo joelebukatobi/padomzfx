@@ -81,7 +81,7 @@
       @apply w-[100%];
       //
       & li {
-        @apply space-y-[2.4rem] py-[4rem] border-b-[.1rem] border-[#DDE3f0];
+        @apply space-y-[2.4rem] py-[4rem] border-b-[.1rem] border-[#DDE3f0] cursor-pointer;
         //
         & header {
           @apply flex justify-between;
