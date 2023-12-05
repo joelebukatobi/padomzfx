@@ -8,10 +8,13 @@ import { Header } from '@/_components/organisms/Header';
 import { teams } from '@/_utils/teams';
 
 export default function Team() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState({});
 
-  const toggleSocials = () => {
-    setOpen(!open);
+  const toggleSocials = (id) => {
+    setOpen((prevOpen) => ({
+      ...prevOpen,
+      [id]: !prevOpen[id],
+    }));
   };
   return (
     <div className="team">
@@ -31,22 +34,27 @@ export default function Team() {
               <div className="team-card-image">
                 <Image src={image} height="" width="" alt="" />
                 <div className="team-card-icons">
-                  <div className={open ? 'team-card-icon' : 'hidden'}>
-                    <svg>
-                      <use href={`/images/sprite.svg#icon-minus`} />
-                    </svg>
-                  </div>
-                  <div className={open ? 'team-card-icon' : 'hidden'}>
-                    <svg>
-                      <use href={`/images/sprite.svg#icon-minus`} />
-                    </svg>
-                  </div>
-                  <div className={open ? 'team-card-icon' : 'hidden'}>
-                    <svg>
-                      <use href={`/images/sprite.svg#icon-minus`} />
-                    </svg>
-                  </div>
-                  <div className="team-card-icon" onClick={toggleSocials}>
+                  {open[id] ? (
+                    <>
+                      <div className="team-card-icon">
+                        <svg>
+                          <use href={`/images/sprite.svg#icon-minus`} />
+                        </svg>
+                      </div>
+                      <div className="team-card-icon">
+                        <svg>
+                          <use href={`/images/sprite.svg#icon-minus`} />
+                        </svg>
+                      </div>{' '}
+                      <div className="team-card-icon">
+                        <svg>
+                          <use href={`/images/sprite.svg#icon-minus`} />
+                        </svg>
+                      </div>
+                    </>
+                  ) : null}
+
+                  <div className="team-card-icon" onClick={() => toggleSocials(id)}>
                     <svg>
                       <use href={`/images/sprite.svg#icon-plus`} />
                     </svg>
@@ -58,15 +66,6 @@ export default function Team() {
                 <p>{role}</p>
               </footer>
             </div>
-            // <tr onClick={() => router.push(`/admin/blog/tags/${slug}`)} key={id}>
-            //   <td>{id}</td>
-            //   <td>{name}</td>
-            //   <td>{author}</td>
-            //   <td>{published}</td>
-            //   <td onClick={() => router.push(`/admin/blog/tags/${slug}`)}>
-            //     <PencilSquareIcon />
-            //   </td>
-            // </tr>
           ))}
         </div>
       </section>
