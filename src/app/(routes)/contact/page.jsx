@@ -111,8 +111,8 @@ export default function Contact() {
           </header>
           <ul className="faqs-list">
             {faqs.map(({ id, title, content }, index) => (
-              <li key={id}>
-                <header onClick={() => handleHeaderClick(index)}>
+              <li key={id} onClick={() => handleHeaderClick(index)}>
+                <header>
                   <h5>{title}</h5>
                   <svg className={activeStates[index] ? 'rotate-180' : 'rotate-0'}>
                     <use href={`/images/sprite.svg#icon-caret`} />
