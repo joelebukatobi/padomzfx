@@ -3,7 +3,7 @@
   & .header {
     &-contact {
       //
-      @apply lg:pl-[10.4rem] lg:w-[60.35%] pt-[13.52rem] pb-[15.1rem];
+      @apply lg:pl-[1.6rem] w-full pt-[20rem] pb-[15.1rem];
       //
       & p {
         &:first-of-type {
@@ -12,7 +12,7 @@
       }
       //
       & h3 {
-        @apply font-extrabold font-epilogue text-[#ffffff];
+        @apply font-extrabold font-epilogue text-[#ffffff] lg:w-[55%];
       }
     }
   }

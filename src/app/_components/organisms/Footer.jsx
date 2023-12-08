@@ -31,24 +31,24 @@ export const Footer = () => {
             </li>
           </ul>
           <ul>
-            <Link href="/">
+            <li>
               <h6>Resources</h6>
-            </Link>
-            <Link href="/">
-              <li>
+            </li>
+            <li>
+              <Link href="/">
                 <p>Privacy Policy</p>
-              </li>
-            </Link>
-            <Link href="/">
-              <li>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
                 <p>Terms of Service</p>
-              </li>
-            </Link>
-            <Link href="/contact">
-              <li>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
                 <p>FAQs</p>
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

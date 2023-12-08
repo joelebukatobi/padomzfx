@@ -2,13 +2,13 @@
   @apply border-y-[10.4rem] border-[#009F0B];
 
   & .container {
-    @apply flex flex-col lg:flex-row lg:justify-between lg:items-end lg:w-[93.91%] py-[21.1rem];
+    @apply flex flex-col lg:flex-row lg:justify-between lg:items-end lg:w-[81.38%] 2xl:w-[65.4%]  lg:px-0 py-[21.1rem];
   }
 
   &--heading {
     @apply lg:w-[65.44%];
     & h2 {
-      @apply font-epilogue font-extrabold text-[#009F0B] text-[4.8rem] lg:text-[6.2rem];
+      @apply font-epilogue font-extrabold text-[#009F0B] text-[4.8rem] lg:text-[6.2rem] lg:leading-[6.7rem];
       & span {
         background: linear-gradient(261deg, #009f0b 6.62%, #0e1d2b 94.96%);
         background-clip: text;
@@ -32,7 +32,7 @@
       }
 
       & svg {
-        @apply h-[1.2rem] w-[1.2rem];
+        @apply h-[1.2rem] w-[1.2rem] cursor-pointer;
 
         &:hover {
           @apply rotate-45 transition-transform duration-[5000];

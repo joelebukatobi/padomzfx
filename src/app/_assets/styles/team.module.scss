@@ -3,7 +3,7 @@
   & .header {
     &-team {
       //
-      @apply lg:pl-[10.4rem] lg:w-[46.09%] pt-[13.52rem] pb-[15.1rem];
+      @apply w-full lg:pl-[1.6rem] pt-[20rem] pb-[15.1rem];
       //
       & p {
         &:first-of-type {
@@ -12,7 +12,7 @@
       }
       //
       & h3 {
-        @apply font-extrabold font-epilogue text-[#ffffff];
+        @apply w-[52.08%] font-extrabold font-epilogue text-[#ffffff];
       }
     }
   }

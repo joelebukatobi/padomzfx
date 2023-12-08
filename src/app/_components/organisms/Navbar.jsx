@@ -87,10 +87,10 @@ export const Navbar = () => {
             </svg>
             <ul className={dropdown ? `block` : `hidden`}>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/team">Team</Link>
+                <Link href="/team">The Team</Link>
               </li>
             </ul>
           </li>

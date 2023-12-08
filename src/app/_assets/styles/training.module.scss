@@ -3,7 +3,7 @@
   & .header {
     &-training {
       //
-      @apply lg:pl-[10.4rem] lg:w-[77%] pt-[13.52rem] pb-[15.1rem] space-y-[1.6rem];
+      @apply w-full lg:pl-[1.6rem] pt-[20rem] pb-[15.1rem] space-y-[1.6rem];
       //
       & p {
         &:first-of-type {
@@ -11,17 +11,21 @@
         }
         //
         &:last-of-type {
-          @apply text-white text-[2rem];
+          @apply text-white text-[2rem] w-[90%];
         }
       }
       //
       & h3 {
-        @apply font-extrabold font-epilogue lg:w-[73.88%] text-[#ffffff];
+        @apply font-extrabold font-epilogue lg:w-[60%] text-[#ffffff];
       }
     }
   }
 
   &-available {
     @apply mt-[14rem] mb-[21.4rem] space-y-[6.4rem];
+
+    & .training-register {
+      background-color: white !important;
+    }
   }
 }

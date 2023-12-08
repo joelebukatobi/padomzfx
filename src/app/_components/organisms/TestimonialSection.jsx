@@ -16,7 +16,8 @@ export const TestimonialSection = ({ className }) => {
         <div className="testimonial-section--heading">
           <h2>Accelerate your </h2>
           <h2>
-            <span>growth. Think it, become it with PandomFx</span>
+            growth.
+            <span>Think it, become it with PandomFx</span>
           </h2>
         </div>
         <div className="testimonial-section--image">

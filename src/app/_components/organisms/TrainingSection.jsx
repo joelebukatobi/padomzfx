@@ -19,7 +19,7 @@ export const TrainingSection = ({ className, openModal, closeModal }) => {
 
   return (
     <>
-      <section className={`${className} training-register`}>
+      <section className="training-register">
         <div className="container">
           <div className="training-register--content">
             <header>
