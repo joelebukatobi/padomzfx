@@ -17,10 +17,10 @@ export const LandingHeader = () => {
         <div className="landing-header-content--text">
           <h1>Learn Forex while you Earn with us</h1>
           <h5>
-            At Padomz Forex, we provide you with funding and take care of the risk so you can enjoy up to 90% of the
-            profits that you make.
+            Padomz Forex will teach you, fund your trading account, assuming the risk for you, allowing you to retain
+            almost all of your generated profits.
           </h5>
-          <Button>View Training</Button>
+          <Button>Learn How To Trade With PadomzFx</Button>
         </div>
         <div className="landing-header-content--image">
           <Image src={HeroImage} width="" height="" alt="HeroImage" />

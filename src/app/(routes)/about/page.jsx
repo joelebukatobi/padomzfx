@@ -28,13 +28,13 @@ export default function About() {
           </div>
           <div className="academy-content">
             <div className="academy-text">
-              <h4>The Academy</h4>
+              <h4>About PadomzFx</h4>
               <p>
-                {`   Welcome to PadomzFx Academy, where financial success begins with knowledge and support. We're more than
-              just an academy; we're your partners on the journey to financial empowerment. We believe in a hands-on,
-              practical approach to learning. Our courses are designed to give you the knowledge you need, but we also
-              emphasize real-world practice. You'll have access to live trading sessions, market analysis, and ongoing
-              support to ensure your success.`}
+                {` Welcome to PadomzFx Academy, your Gateway to Financial Success through Knowledge and
+Support. As your dedicated partners in financial empowerment, we offer more than mere
+education—we're committed to your success. Our approach blends theoretical knowledge with
+hands-on practice, providing live trading sessions, market analysis, and continuous support. Join us
+to gain essential knowledge and practical experience for your financial journey.`}
               </p>
             </div>
             <div className="academy-group">
@@ -74,8 +74,8 @@ export default function About() {
               </div>
               <p>Community</p>
               <p>
-                Joining PadomzFx Academy means becoming part of a vibrant and supportive community. Connect with fellow
-                traders, share experiences, and learn from each other.
+                PadomzFx consists of a thriving and supportive community. Engage with like-minded traders, exchange
+                experiences, and benefit from collaborative learning opportunities.
               </p>
             </div>
             <div className="advantage-card">
@@ -84,8 +84,8 @@ export default function About() {
               </div>
               <p>Expertise</p>
               <p>
-                Joining PadomzFx Academy means becoming part of a vibrant and supportive community. Connect with fellow
-                traders, share experiences, and learn from each other.
+                {`At PadomzFx Academy, expertise is not just an aspiration; it's our cornerstone. Our mission is to
+                cultivate expertise in every potential trader who walks through our doors.`}
               </p>
             </div>
             <div className="advantage-card">
@@ -94,8 +94,8 @@ export default function About() {
               </div>
               <p>Funding Opportunities</p>
               <p>
-                {`    We're not just about education; we're also about providing you with funding opportunities to kickstart
-                your trading career. We believe in your potential, and we're ready to invest in it.`}
+                {`We understand that access to capital is crucial for forex traders starting their journey, which is why
+we offer unique funding programs to support your ambitions. We fund, you make money.`}
               </p>
             </div>
           </div>
@@ -125,8 +125,8 @@ export default function About() {
             <header>
               <h4>Our Approach</h4>
               <p>
-                At PandomFx, we believe in a revolutionary approach to Forex education and trading that sets us apart.
-                Our unique methodology is designed to empower you at every step of your trading journey.
+                At PadomzFx, we believe in a revolutionary approach to Forex Trading education that sets us apart. Our
+                unique methodology is designed to empower you at every step of your trading journey.
               </p>
             </header>
             <Image src={ApproachImage} height="" width="" alt="" />
@@ -155,7 +155,7 @@ export default function About() {
               <div className="approach-text">
                 <p>Get Funded</p>
                 <p>
-                  Qualify for a live trading account with financial backing from PandomFx. Trade in a real-world
+                  Qualify for a live trading account with financial backing from PadomzFx. Trade in a real-world
                   environment without risking your own capital.
                 </p>
               </div>

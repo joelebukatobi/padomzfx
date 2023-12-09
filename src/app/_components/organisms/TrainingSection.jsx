@@ -26,9 +26,9 @@ export const TrainingSection = ({ className, openModal, closeModal }) => {
               <p>Upcoming register</p>
               <h4>Mastering Forex Trading - A Comprehensive Guide</h4>
               <p>
-                Are you looking to unlock the potential of the Forex market and become a skilled trader? The course is
-                designed for beginners and intermediate traders who want to develop a solid understanding of the Forex
-                market, trading strategies...
+                Are you ready to Unleash Your Forex Trading Potential? This course caters to beginners and intermediate
+                traders aiming to gain a robust grasp of the Forex market. Explore trading strategies and foundational
+                concepts in this comprehensive program designed for those eager to evolve into skilled traders.
               </p>
             </header>
             <ul>
