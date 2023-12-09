@@ -1,5 +1,5 @@
 .index {
-  @apply w-[100%];
+  @apply w-[100%] h-auto;
   & .potential {
     //
     @apply w-full lg:px-[6.4rem] m-auto flex flex-col-reverse lg:flex-row lg:justify-between  pt-[18rem] pb-[20rem];

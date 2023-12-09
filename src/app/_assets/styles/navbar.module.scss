@@ -14,7 +14,7 @@
 
   &-menu {
     & svg {
-      @apply h-[2.4rem] w-[2.4rem];
+      @apply h-[2.4rem] w-[2.4rem] stroke-black fill-black;
     }
   }
   & ul {

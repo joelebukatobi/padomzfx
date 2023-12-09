@@ -1,0 +1,56 @@
+.testimonials {
+  @apply z-[1500] h-[100vh] w-[100%] overflow-auto bg-[#0E1D2B] top-0 px-[3.2rem] pt-[16rem] pb-[8rem] lg:pb-0 lg:pt-0 lg:px-[3.2] xl:px-[0] lg:items-center lg:justify-center left-0 flex-col;
+
+  &-close {
+    @apply bg-[#009F0B] top-[3.6rem] right-[3.2rem] xl:top-[4rem] xl:right-[7.2rem] 2xl:right-[10.4rem] absolute flex items-center justify-center h-[4.8rem] w-[4.8rem] rounded-[100%] cursor-pointer;
+    //
+    & svg {
+      @apply fill-white stroke-white h-[2.4rem] w-[2.4rem];
+    }
+  }
+
+  & header {
+    @apply text-center mb-[4rem];
+    //
+    & p {
+      @apply text-[#009F0B] text-[1.4rem] uppercase font-bold;
+    }
+    //
+    & h3 {
+      @apply text-white font-bold text-[4rem] w-full;
+    }
+  }
+
+  &-row {
+    @apply h-full lg:h-auto w-full xl:w-[85.41%] flex flex-col lg:flex-row justify-between lg:flex-wrap gap-x-[2.4rem] gap-y-[3.2rem];
+  }
+  //
+  &-card {
+    @apply h-auto w-[100%] lg:w-[32%] text-white bg-white/10 p-[1.6rem];
+    & p {
+      @apply text-[1.4rem];
+
+      &:first-of-type {
+        @apply text-[1.6rem] font-bold;
+      }
+
+      &:nth-of-type(2) {
+        @apply text-[#F7CE5B] mb-[2rem] lg:mb-[.8rem] xl:mb-[2rem] font-semibold;
+      }
+    }
+  }
+  //
+  &-rating {
+    @apply flex bg-[#041E37] w-[6.4rem] py-[.8rem] rounded-[4rem] justify-center items-center mt-[2.2rem] lg:mt-[1.6rem] xl:mt-[2.2rem] gap-x-[.4rem];
+    //
+    & svg {
+      @apply h-[1.6rem] w-[1.6rem];
+    }
+
+    & p {
+      @apply leading-[1.8rem] font-semibold;
+
+      font-size: 1.4rem !important;
+    }
+  }
+}

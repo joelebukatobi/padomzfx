@@ -3,27 +3,37 @@ import React, { useState } from 'react';
 // Next
 import Image from 'next/image';
 // Components
-import { Button } from '@/_components/atoms/Button';
 import { TrainingSection } from '@/_components/organisms/TrainingSection';
 import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
 import { Register } from '@/_components/organisms/Register';
+import { Testimonials } from '@/_components/organisms/Testimonials';
 // Images
 import PotentialImage from '@/_assets/images/potential-image.png';
 //
 
 export default function Home() {
-  const [modal, setModal] = useState(false);
+  const [register, setRegister] = useState(false);
+  const [testimonials, setTestimonials] = useState(false);
   //
-  const openModal = () => {
-    setModal(true);
+  const openRegister = () => {
+    setRegister(true);
   };
   //
-  const closeModal = () => {
-    setModal(false);
+  const closeRegister = () => {
+    setRegister(false);
+  };
+  //
+  const openTestimonials = () => {
+    setTestimonials(true);
+  };
+  //
+  const closeTestimonials = () => {
+    setTestimonials(false);
   };
   return (
     <div className="index">
-      <Register open={modal} close={closeModal} />
+      <Testimonials open={testimonials} close={closeTestimonials} />
+      <Register open={register} close={closeRegister} />
       <section className="container">
         <div className="potential">
           <div className="potential-image">
@@ -139,8 +149,8 @@ of Forex trading.`}
         </div>
       </section>
 
-      <TrainingSection openModal={openModal} />
-      <TestimonialSection />
+      <TrainingSection openModal={openRegister} />
+      <TestimonialSection openModal={openTestimonials} />
     </div>
   );
 }

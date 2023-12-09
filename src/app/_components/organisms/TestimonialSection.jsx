@@ -9,9 +9,9 @@ import { Button } from '@/_components/atoms/Button';
 import TestimonialImage from '@/_assets/images/testimonial-image.png';
 //
 
-export const TestimonialSection = ({ className }) => {
+export const TestimonialSection = ({ openModal }) => {
   return (
-    <section className={`${className} testimonial-section`}>
+    <section className="testimonial-section">
       <div className=" container">
         <div className="testimonial-section--heading">
           <h2>Accelerate your </h2>
@@ -23,7 +23,7 @@ export const TestimonialSection = ({ className }) => {
         <div className="testimonial-section--image">
           <Image src={TestimonialImage} width="" height="" alt="" />
           <div className="testimonial-section--link">
-            <p>
+            <p onClick={openModal}>
               Read Testimonials
               <svg>
                 <use href={`/images/sprite.svg#icon-arrow-right`} />

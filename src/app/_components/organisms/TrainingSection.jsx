@@ -6,12 +6,11 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 // Components
 import { Button } from '@/_components/atoms/Button';
-import { Register } from '@/_components/organisms/Register';
 // Images
 import TrainingImage from '@/_assets/images/training-image.png';
 //
 
-export const TrainingSection = ({ className, openModal, closeModal }) => {
+export const TrainingSection = ({ openModal }) => {
   const navigate = useRouter();
   const openInfo = () => {
     navigate.push('/training/info');
