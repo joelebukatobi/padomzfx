@@ -7,21 +7,34 @@ import { Header } from '@/_components/organisms/Header';
 import { TrainingSection } from '@/_components/organisms/TrainingSection';
 import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
 import { Register } from '@/_components/organisms/Register';
+import { Testimonials } from '@/_components/organisms/Testimonials';
 //
 
 export default function Training() {
-  const [modal, setModal] = useState(false);
+  const [register, setRegister] = useState(false);
+  const [testimonials, setTestimonials] = useState(false);
   //
-  const openModal = () => {
-    setModal(true);
+  const openRegister = () => {
+    setRegister(true);
   };
   //
-  const closeModal = () => {
-    setModal(false);
+  const closeRegister = () => {
+    setRegister(false);
+  };
+  //
+  //
+  const openTestimonials = () => {
+    setTestimonials(true);
+  };
+  //
+  const closeTestimonials = () => {
+    setTestimonials(false);
   };
   return (
     <div className="training">
-      <Register open={modal} close={closeModal} />
+      {' '}
+      <Testimonials open={testimonials} close={closeTestimonials} />
+      <Register open={register} close={closeRegister} />
       <Header>
         <div className="container">
           <div className="header-training">
@@ -36,10 +49,10 @@ export default function Training() {
         </div>
       </Header>
       <div className="training-available">
-        <TrainingSection openModal={openModal} />
-        <TrainingSection openModal={openModal} />
+        <TrainingSection openModal={openRegister} />
+        <TrainingSection openModal={openRegister} />
       </div>
-      <TestimonialSection />
+      <TestimonialSection openModal={openTestimonials} />
     </div>
   );
 }

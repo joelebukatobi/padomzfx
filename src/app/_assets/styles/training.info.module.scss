@@ -2,7 +2,7 @@
   //
   & .header {
     &-info {
-      @apply relative flex flex-col lg:flex-row w-full justify-between pt-[8rem] lg:pt-[12rem] pb-[8rem];
+      @apply px-0 relative flex flex-col lg:flex-row w-full justify-between pt-[8rem] lg:pt-[12rem] pb-[8rem];
     }
 
     &-content {
@@ -36,15 +36,15 @@
       }
 
       @media all and (min-width: 1920px) {
-        @apply pl-[6.4rem];
+        // @apply pl-[6.4rem];
       }
     }
 
     &-image {
-      @apply hidden lg:block absolute w-[65%] top-[18rem] right-[-8rem];
+      @apply hidden lg:block absolute lg:w-[50%] xl:w-[55%] 2xl:w-[65%] top-[18rem] right-[-2.4rem] xl:right-[-3.2rem];
 
       @media all and (min-width: 1920px) {
-        @apply right-[0rem] w-[50%];
+        @apply right-[4.8rem] w-[50%];
       }
 
       & img {
