@@ -1,11 +1,11 @@
 .landing-header {
-  @apply bg-[#0e1d2b] pt-[2.4rem] lg:px-[4.8rem] relative lg:h-[103.5rem] overflow-hidden;
+  @apply bg-[#0e1d2b] pt-[2.4rem] lg:pl-[4.8rem] 2xl:pl-[9.6rem] relative lg:h-[103.5rem] overflow-hidden;
 
   &-content {
-    @apply mt-[14.152rem] text-white lg:flex justify-between lg:px-[4rem];
+    @apply mt-[20rem] text-white lg:flex gap-x-[6%] lg:px-[4.8rem];
     //
     &--text {
-      @apply lg:w-[47.31%];
+      @apply lg:w-[45%];
       //
       & h1 {
         @apply w-full font-bold leading-[7rem] mb-[3rem] font-epilogue;
@@ -16,12 +16,12 @@
       }
 
       & button {
-        @apply bg-[#009F0B] w-[50%] lg:w-[39.6%];
+        @apply bg-[#009F0B] px-[6.4rem];
       }
     }
     //
     &--image {
-      @apply my-[8rem] lg:my-[0rem] lg:w-[50.94%] flex justify-end;
+      @apply my-[8rem] lg:my-[0rem] lg:w-[45%] flex justify-end;
     }
   }
 
@@ -31,5 +31,5 @@
 }
 
 .header {
-  @apply bg-[#0e1d2b] pt-[2.4rem] lg:px-[4.8rem] relative;
+  @apply bg-[#0e1d2b] pt-[2.4rem] lg:pl-[4.8rem] 2xl:pl-[9.6rem] relative;
 }

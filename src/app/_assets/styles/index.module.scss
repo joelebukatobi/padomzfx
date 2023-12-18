@@ -1,14 +1,16 @@
 .index {
+  @apply w-[100%] h-auto;
   & .potential {
     //
-    @apply lg:w-[88.30%] m-auto flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center pt-[18rem] pb-[20rem];
+    @apply w-full lg:px-[6.4rem] m-auto flex flex-col-reverse lg:flex-row lg:justify-between  pt-[18rem] pb-[20rem];
+
     //
     &-image {
-      @apply mt-[8rem] lg:mt-0 lg:w-[43.10%] relative;
+      @apply mt-[8rem] lg:mt-0 lg:w-[55%] relative;
     }
 
     &-text {
-      @apply lg:w-[47.18%];
+      @apply lg:w-[45%] lg:mt-[6.4rem];
 
       & h4 {
         @apply font-epilogue font-bold mb-[1.6rem] lg:w-[83.84%];
@@ -25,7 +27,7 @@
   }
 
   & .course {
-    @apply lg:w-[86.21%] m-auto mt-[14.1rem];
+    @apply lg:px-[6.4rem] w-full m-auto;
     //
     &-header {
       & h3 {
@@ -48,7 +50,7 @@
           }
           //
           & p {
-            @apply mb-4 text-left;
+            @apply mb-4 text-left w-[88.38%];
           }
         }
 

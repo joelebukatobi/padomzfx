@@ -9,7 +9,7 @@ import { Button } from "@/_components/atoms/Button";
 import TrainingImage from "@/_assets/images/training-image.png";
 //
 
-export const TrainingSection = ({ className, openModal, closeModal }) => {
+export const TrainingSection = ({ openModal }) => {
   const navigate = useRouter();
   const openInfo = () => {
     navigate.push("/training/info");
@@ -17,7 +17,7 @@ export const TrainingSection = ({ className, openModal, closeModal }) => {
 
   return (
     <>
-      <section className={`${className} training-register`}>
+      <section className="training-register">
         <div className="container">
           <div className="training-register--content">
             <header>

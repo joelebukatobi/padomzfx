@@ -17,42 +17,38 @@ export const Footer = () => {
         <div>
           <ul>
             <li>
-              <Link href="/">
-                <h6>Company </h6>
-              </Link>
+              <h6>Company </h6>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/about">
                 <p>About Us</p>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/trainings">
                 <p>Trainings</p>
               </Link>
             </li>
           </ul>
           <ul>
-            <Link href="/">
-              <li>
-                <h6>Resources</h6>
-              </li>
-            </Link>
-            <Link href="/">
-              <li>
+            <li>
+              <h6>Resources</h6>
+            </li>
+            <li>
+              <Link href="/">
                 <p>Privacy Policy</p>
-              </li>
-            </Link>
-            <Link href="/">
-              <li>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
                 <p>Terms of Service</p>
-              </li>
-            </Link>
-            <Link href="/">
-              <li>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact">
                 <p>FAQs</p>
-              </li>
-            </Link>
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -78,24 +74,32 @@ export const Footer = () => {
           </ul>
           <ul>
             <li>
-              <svg>
-                <use href={`/images/sprite.svg#icon-facebook`} />
-              </svg>
+              <a href="https://facebook.com/">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-facebook`} />
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <use href={`/images/sprite.svg#icon-instagram`} />
-              </svg>
+              <a href="https://instagram.com/">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-instagram`} />
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <use href={`/images/sprite.svg#icon-twitter`} />
-              </svg>
+              <a href="https://twitter.com/">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-twitter`} />
+                </svg>
+              </a>
             </li>
             <li>
-              <svg>
-                <use href={`/images/sprite.svg#icon-youtube`} />
-              </svg>
+              <a href="https://youtube.com/">
+                <svg>
+                  <use href={`/images/sprite.svg#icon-youtube`} />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>

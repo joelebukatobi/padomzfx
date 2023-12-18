@@ -1,13 +1,14 @@
 .training-register {
   @apply bg-[#009F0B]/[5%];
   & .container {
-    @apply flex flex-col-reverse lg:flex-row justify-between;
+    @apply flex flex-col-reverse lg:flex-row justify-between lg:w-[88%] 2xl:w-[65%] px-0;
   }
 
   &--content {
-    @apply lg:w-[50%] bg-[#0E1D2B] pt-[7.2rem] px-[4.0rem] text-white;
+    @apply lg:w-[50%] bg-[#0E1D2B] pt-[7.2rem] pl-[5.4rem] pr-[3.6rem] text-white;
 
     & header {
+      @apply w-[85.48%];
       & p {
         &:first-of-type {
           @apply text-[#009F0B] uppercase font-bold;
@@ -39,14 +40,23 @@
     }
     //
     & div {
-      @apply mt-[7.2rem] w-full lg:w-[77.91%] flex gap-x-[2.4rem] mb-[3.2rem];
+      @apply mt-[7.2rem] 2xl:mt-[5.6rem] w-full lg:w-[77.91%] flex gap-x-[2.4rem] mb-[8rem] 2xl:mb-[5.6rem];
       & button {
         @apply w-[50%];
+        //
         &:first-of-type {
           @apply bg-[#009F0B];
+          &:hover {
+            @apply bg-white text-black;
+          }
         }
+        //
         &:last-of-type {
           @apply bg-[#ffffff] text-black;
+
+          &:hover {
+            @apply bg-[#009F0B] text-white;
+          }
         }
       }
     }
@@ -54,5 +64,8 @@
   //
   &--image {
     @apply lg:w-[50%];
+    & img {
+      @apply h-full;
+    }
   }
 }

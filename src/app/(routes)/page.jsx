@@ -1,16 +1,39 @@
 "use client";
+import { useState } from "react";
 // Next
 import Image from "next/image";
 // Components
+import { Register } from "@/_components/organisms/Register";
 import { TestimonialSection } from "@/_components/organisms/TestimonialSection";
+import { Testimonials } from "@/_components/organisms/Testimonials";
 import { TrainingSection } from "@/_components/organisms/TrainingSection";
 // Images
 import PotentialImage from "@/_assets/images/potential-image.png";
 //
 
 export default function Home() {
+  const [register, setRegister] = useState(false);
+  const [testimonials, setTestimonials] = useState(false);
+  //
+  const openRegister = () => {
+    setRegister(true);
+  };
+  //
+  const closeRegister = () => {
+    setRegister(false);
+  };
+  //
+  const openTestimonials = () => {
+    setTestimonials(true);
+  };
+  //
+  const closeTestimonials = () => {
+    setTestimonials(false);
+  };
   return (
     <div className="index">
+      <Testimonials open={testimonials} close={closeTestimonials} />
+      <Register open={register} close={closeRegister} />
       <section className="container">
         <div className="potential">
           <div className="potential-image">
@@ -74,11 +97,17 @@ of Forex trading.`}
               </div>
               <div className="course-content--card--text">
                 <h5>Real-Time Market Insights</h5>
-
                 <p>
                   Stay ahead of the curve with access to live trading sessions,
                   webinars, and market analysis. Learn to interpret market
                   movements and make well-informed trades.
+                </p>
+                <p>
+                  We provide cutting-edge tools and techniques that empower our
+                  students with the ability to conduct real-time analysis.
+                  Through live market feeds, up-to-the-minute data, and advanced
+                  analytical resources, our students learn to interpret market
+                  dynamics swiftly and accurately.
                 </p>
                 <p>
                   We provide cutting-edge tools and techniques that empower our
@@ -97,13 +126,13 @@ of Forex trading.`}
               </div>
               <div className="course-content--card--text">
                 <h5>Proven Success Stories</h5>
+
                 <p>
-                  Our students have achieved remarkable results, and many have
+                  {`Our students have achieved remarkable results, and many have
                   gone on to become successful Forex traders. When you choose a
                   PadomzFx course, you're setting yourself up for a bright
-                  future in the world of Forex.
+                  future in the world of Forex.`}
                 </p>
-
                 <p>
                   Our academy boasts a wealth of success stories, with numerous
                   students achieving their trading goals and realizing financial
@@ -135,14 +164,20 @@ of Forex trading.`}
                   trading sessions, real-time simulations, and case studies that
                   immerse students in the dynamic world of Forex trading.`}
                 </p>
+                <p>
+                  {`We believe in a hands-on approach to learning. Our curriculum
+                  isn't just theory; it's practical application. We offer live
+                  trading sessions, real-time simulations, and case studies that
+                  immerse students in the dynamic world of Forex trading.`}
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <TrainingSection />
-      <TestimonialSection />
+      <TrainingSection openModal={openRegister} />
+      <TestimonialSection openModal={openTestimonials} />
     </div>
   );
 }

@@ -1,7 +1,9 @@
 .navbar {
   //
-  @apply h-[8rem] lg:mx-0 bg-[#ffffff] rounded-[.4rem] pt-[1.6rem] pr-[3.2rem] pl-[3.2rem] pb-[1.6rem] flex justify-between items-center w-full relative;
-
+  @apply h-[8rem] lg:mx-0 bg-[#ffffff] rounded-[.4rem] pt-[1.6rem] px-[1.6rem] lg:px-[3.2rem] pb-[1.6rem] flex justify-between items-center z-[1000] w-[93.19%] fixed left-1/2 transform -translate-x-1/2;
+  @media all and (min-width: 1920px) {
+    @apply max-w-[144rem];
+  }
   //
   & a {
     & img {
@@ -12,12 +14,20 @@
 
   &-menu {
     & svg {
-      @apply h-[2.4rem] w-[2.4rem];
+      @apply h-[2.4rem] w-[2.4rem] stroke-black fill-black;
     }
   }
   & ul {
     & li {
-      @apply text-[2rem] font-bold lg:text-[1.6rem] py-[.8rem] px-[1.6rem] font-mulish lg:font-medium cursor-pointer;
+      @apply text-[2rem] font-bold lg:text-[1.6rem] py-[.8rem] px-[1.6rem] lg:px-0 lg:w-[12.8rem] font-mulish lg:font-medium cursor-pointer lg:text-center;
+
+      & a {
+        @apply w-full;
+
+        &:hover {
+          @apply text-[#009F0B] font-semibold;
+        }
+      }
 
       & svg {
         @apply hidden lg:block h-[1.6rem] w-[1.6rem];
@@ -26,12 +36,26 @@
       &[aria-label='dropdown'] {
         @apply flex flex-col lg:flex-row lg:items-center gap-x-[.8rem] px-[1.6rem] relative;
 
+        & span {
+          &:hover {
+            @apply text-[#009F0B] font-semibold;
+          }
+        }
+
         & hr {
           @apply mt-[1.6rem] lg:hidden;
         }
 
         & ul {
-          @apply lg:absolute z-[100] bg-[#ffffff] rounded-[.4rem]  lg:top-[7.2rem] py-[.8rem] w-[100%] lg:left-0;
+          @apply lg:absolute z-[100] bg-[#ffffff] rounded-[.2rem]  lg:top-[6.4rem] py-[.8rem] w-[100%] lg:left-0;
+
+          & li {
+            @apply lg:text-center;
+
+            &:hover {
+              @apply bg-[#009F0B]/10;
+            }
+          }
         }
       }
     }

@@ -3,7 +3,7 @@
   & .header {
     &-contact {
       //
-      @apply lg:pl-[10.4rem] lg:w-[60.35%] pt-[13.52rem] pb-[15.1rem];
+      @apply lg:pl-[1.6rem] w-full pt-[20rem] pb-[15.1rem];
       //
       & p {
         &:first-of-type {
@@ -12,7 +12,7 @@
       }
       //
       & h3 {
-        @apply font-extrabold font-epilogue text-[#ffffff];
+        @apply font-extrabold font-epilogue text-[#ffffff] lg:w-[55%];
       }
     }
   }
@@ -60,6 +60,50 @@
 
     & button {
       @apply bg-[#009F0B] text-[#ffffff] w-full mt-[3.2rem];
+    }
+  }
+
+  .faqs {
+    @apply w-full bg-[#009F0B]/5 py-[12.8rem];
+    //
+    & .container {
+      @apply lg:w-[58%] mx-auto;
+    }
+    //
+
+    &-header {
+      & h4 {
+        @apply font-bold text-center text-[#0E1D2B];
+      }
+    }
+
+    &-list {
+      @apply w-[100%];
+      //
+      & li {
+        @apply space-y-[2.4rem] py-[4rem] border-b-[.1rem] border-[#DDE3f0] cursor-pointer;
+        //
+        & header {
+          @apply flex justify-between;
+
+          & h5 {
+            @apply text-[#0E1D2B] font-bold;
+          }
+
+          & svg {
+            @apply h-[2.4rem] w-[2.4rem];
+          }
+        }
+      }
+      //
+    }
+
+    &-footer {
+      @apply mt-[4rem];
+      //
+      & h5 {
+        @apply text-[#009F0B];
+      }
     }
   }
 }

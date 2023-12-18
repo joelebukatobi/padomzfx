@@ -86,9 +86,8 @@ to gain essential knowledge and practical experience for your financial journey.
               </div>
               <p>Expertise</p>
               <p>
-                At PadomzFx Academy, expertise is not just an aspiration; it's
-                our cornerstone. Our mission is to cultivate expertise in every
-                potential trader who walks through our doors.
+                {`At PadomzFx Academy, expertise is not just an aspiration; it's our cornerstone. Our mission is to
+                cultivate expertise in every potential trader who walks through our doors.`}
               </p>
             </div>
             <div className="advantage-card">

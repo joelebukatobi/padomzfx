@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 // Next
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 // Components
 
 // Image
@@ -43,6 +44,8 @@ export const Navbar = () => {
     };
   }, [dropdown]);
 
+  const pathname = usePathname();
+
   return (
     <div className="container">
       <nav className="navbar">
@@ -63,28 +66,49 @@ export const Navbar = () => {
           }
         >
           <li>
-            <a href="/">Home</a>
+            <a className={pathname === '/' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'} href="/">
+              Home
+            </a>
           </li>
           <li aria-label="dropdown" onClick={toggleDropdown} ref={dropdownRef}>
-            Company
+            <span
+              className={
+                pathname === '/about' || pathname === '/team'
+                  ? 'text-[#009F0B] font-semibold'
+                  : 'text-black font-normal'
+              }
+            >
+              {' '}
+              Company
+            </span>
             <hr className={dropdown ? `block` : 'hidden'} />
             <svg>
               <use href={`/images/sprite.svg#icon-caret`} />
             </svg>
             <ul className={dropdown ? `block` : `hidden`}>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/team">Team</Link>
+                <Link href="/team">The Team</Link>
               </li>
             </ul>
           </li>
           <li>
-            <Link href="/training">Training</Link>
+            <Link
+              className={pathname === '/training' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'}
+              href="/training"
+            >
+              Training
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Get In Touch</Link>
+            <Link
+              className={pathname === '/contact' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'}
+              href="/contact"
+            >
+              Get In Touch
+            </Link>
           </li>
         </ul>
       </nav>
