@@ -1,12 +1,10 @@
-'use client';
+"use client";
 //
-import React from 'react';
 // Next
-import Image from 'next/image';
+import Image from "next/image";
 // Components
-import { Button } from '@/_components/atoms/Button';
 // Images
-import TestimonialImage from '@/_assets/images/testimonial-image.png';
+import TestimonialImage from "@/_assets/images/testimonial-image.png";
 //
 
 export const TestimonialSection = ({ openModal }) => {
@@ -17,7 +15,7 @@ export const TestimonialSection = ({ openModal }) => {
           <h2>Accelerate your </h2>
           <h2>
             growth.
-            <span>Think it, become it with PandomFx</span>
+            <span>Think it, become it with PadomzFx</span>
           </h2>
         </div>
         <div className="testimonial-section--image">

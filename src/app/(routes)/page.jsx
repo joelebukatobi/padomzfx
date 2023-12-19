@@ -1,14 +1,14 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import { useState } from "react";
 // Next
-import Image from 'next/image';
+import Image from "next/image";
 // Components
-import { TrainingSection } from '@/_components/organisms/TrainingSection';
-import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
-import { Register } from '@/_components/organisms/Register';
-import { Testimonials } from '@/_components/organisms/Testimonials';
+import { Register } from "@/_components/organisms/Register";
+import { TestimonialSection } from "@/_components/organisms/TestimonialSection";
+import { Testimonials } from "@/_components/organisms/Testimonials";
+import { TrainingSection } from "@/_components/organisms/TrainingSection";
 // Images
-import PotentialImage from '@/_assets/images/potential-image.png';
+import PotentialImage from "@/_assets/images/potential-image.png";
 //
 
 export default function Home() {
@@ -37,7 +37,12 @@ export default function Home() {
       <section className="container">
         <div className="potential">
           <div className="potential-image">
-            <Image src={PotentialImage} width="" height="" alt="unlock your potential" />
+            <Image
+              src={PotentialImage}
+              width=""
+              height=""
+              alt="unlock your potential"
+            />
           </div>
           <div className="potential-text">
             <h4>Unlock Your Trading Potential</h4>
@@ -47,7 +52,7 @@ limits—explore endless possibilities, learn from unparalleled expertise, and r
 that once seemed out of reach.`}
             </p>
             <p>
-              {`With PandomzFx, your journey transforms into an adventure without boundaries. Every
+              {`With PadomzFx, your journey transforms into an adventure without boundaries. Every
 gained insight and honed skill propels you toward unparalleled success in the thrilling realm
 of Forex trading.`}
             </p>
@@ -59,7 +64,7 @@ of Forex trading.`}
         <div className="course">
           <div className="course-header">
             <h3>
-              Why you should take a <span>PandomFx</span> course
+              Why you should take a <span>PadomzFx</span> course
             </h3>
           </div>
           <div className="course-content">
@@ -72,13 +77,15 @@ of Forex trading.`}
               <div className="course-content--card--text">
                 <h5>Structured Learning</h5>
                 <p>
-                  Our academy provides a meticulously crafted curriculum designed to take you from a novice to a
-                  proficient trader.
+                  Our academy provides a meticulously crafted curriculum
+                  designed to take you from a novice to a proficient trader.
                 </p>
                 <p>
-                  We offer a systematic approach that begins with foundational concepts, ensuring a solid understanding
-                  of the market, technical analysis, risk management, and trading psychology. Each module builds upon
-                  the previous one, fostering a progressive learning environment.
+                  We offer a systematic approach that begins with foundational
+                  concepts, ensuring a solid understanding of the market,
+                  technical analysis, risk management, and trading psychology.
+                  Each module builds upon the previous one, fostering a
+                  progressive learning environment.
                 </p>
               </div>
             </div>
@@ -91,13 +98,16 @@ of Forex trading.`}
               <div className="course-content--card--text">
                 <h5>Real-Time Market Insights</h5>
                 <p>
-                  Stay ahead of the curve with access to live trading sessions, webinars, and market analysis. Learn to
-                  interpret market movements and make well-informed trades.
+                  Stay ahead of the curve with access to live trading sessions,
+                  webinars, and market analysis. Learn to interpret market
+                  movements and make well-informed trades.
                 </p>
                 <p>
-                  We provide cutting-edge tools and techniques that empower our students with the ability to conduct
-                  real-time analysis. Through live market feeds, up-to-the-minute data, and advanced analytical
-                  resources, our students learn to interpret market dynamics swiftly and accurately.
+                  We provide cutting-edge tools and techniques that empower our
+                  students with the ability to conduct real-time analysis.
+                  Through live market feeds, up-to-the-minute data, and advanced
+                  analytical resources, our students learn to interpret market
+                  dynamics swiftly and accurately.
                 </p>
               </div>
             </div>
@@ -117,10 +127,12 @@ of Forex trading.`}
                   future in the world of Forex.`}
                 </p>
                 <p>
-                  Our academy boasts a wealth of success stories, with numerous students achieving their trading goals
-                  and realizing financial independence through our mentorship and educational programs. These success
-                  stories serve as a testament to the effectiveness of our tailored curriculum, personalized mentorship,
-                  and practical learning approach.
+                  Our academy boasts a wealth of success stories, with numerous
+                  students achieving their trading goals and realizing financial
+                  independence through our mentorship and educational programs.
+                  These success stories serve as a testament to the
+                  effectiveness of our tailored curriculum, personalized
+                  mentorship, and practical learning approach.
                 </p>
               </div>
             </div>
@@ -133,9 +145,10 @@ of Forex trading.`}
               <div className="course-content--card--text">
                 <h5>Comprehensive Curriculum</h5>
                 <p>
-                  Our courses cover everything from the basics of Forex trading to advanced strategies, technical and
-                  fundamental analysis, and risk management. We provide you with a 360-degree education to make informed
-                  trading decisions.
+                  Our courses cover everything from the basics of Forex trading
+                  to advanced strategies, technical and fundamental analysis,
+                  and risk management. We provide you with a 360-degree
+                  education to make informed trading decisions.
                 </p>
                 <p>
                   {`We believe in a hands-on approach to learning. Our curriculum

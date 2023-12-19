@@ -1,13 +1,12 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import { useState } from "react";
 // Next
-import Image from 'next/image';
 // Components
-import { Header } from '@/_components/organisms/Header';
-import { TrainingSection } from '@/_components/organisms/TrainingSection';
-import { TestimonialSection } from '@/_components/organisms/TestimonialSection';
-import { Register } from '@/_components/organisms/Register';
-import { Testimonials } from '@/_components/organisms/Testimonials';
+import { Header } from "@/_components/organisms/Header";
+import { Register } from "@/_components/organisms/Register";
+import { TestimonialSection } from "@/_components/organisms/TestimonialSection";
+import { Testimonials } from "@/_components/organisms/Testimonials";
+import { TrainingSection } from "@/_components/organisms/TrainingSection";
 //
 
 export default function Training() {
@@ -32,17 +31,17 @@ export default function Training() {
   };
   return (
     <div className="training">
-      {' '}
+      {" "}
       <Testimonials open={testimonials} close={closeTestimonials} />
       <Register open={register} close={closeRegister} />
       <Header>
         <div className="container">
           <div className="header-training">
             <p>Master The Markets</p>
-            <h3>PandomFx Presents a Live Trading Experience</h3>
+            <h3>PadomzFx Presents a Live Trading Experience</h3>
             <p>
               {`
-            Immerse yourself in the world of live trading with PandomFx. Our event is not just about learning; it's
+            Immerse yourself in the world of live trading with PadomzFx. Our event is not just about learning; it's
             about mastering the markets in real-time. Join us for an unparalleled experience that goes beyond theory.`}
             </p>
           </div>

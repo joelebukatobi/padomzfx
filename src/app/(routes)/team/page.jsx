@@ -1,11 +1,11 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import { useState } from "react";
 // Next
-import Image from 'next/image';
+import Image from "next/image";
 // Components
-import { Header } from '@/_components/organisms/Header';
+import { Header } from "@/_components/organisms/Header";
 // Utils
-import { teams } from '@/_utils/teams';
+import { teams } from "@/_utils/teams";
 
 export default function Team() {
   const [open, setOpen] = useState({});
@@ -22,7 +22,7 @@ export default function Team() {
         <div className="container">
           <div className="header-team">
             <p>Trading Gurus Unveiled</p>
-            <h3>Meet the Visionaries Behind PandomzFx</h3>
+            <h3>Meet the Visionaries Behind PadomzFx</h3>
           </div>
         </div>
       </Header>
@@ -45,7 +45,7 @@ export default function Team() {
                         <svg>
                           <use href={`/images/sprite.svg#icon-minus`} />
                         </svg>
-                      </div>{' '}
+                      </div>{" "}
                       <div className="team-card-icon">
                         <svg>
                           <use href={`/images/sprite.svg#icon-minus`} />
@@ -54,7 +54,10 @@ export default function Team() {
                     </>
                   ) : null}
 
-                  <div className="team-card-icon" onClick={() => toggleSocials(id)}>
+                  <div
+                    className="team-card-icon"
+                    onClick={() => toggleSocials(id)}
+                  >
                     <svg>
                       <use href={`/images/sprite.svg#icon-plus`} />
                     </svg>
