@@ -1,11 +1,10 @@
-'use client';
+"use client";
 //
-import React from 'react';
 // Next
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 // Components
-import LogoWhite from '@/_assets/images/logo-white.png';
+import LogoWhite from "@/_assets/images/logo-white.png";
 
 export const Footer = () => {
   return (
@@ -25,7 +24,7 @@ export const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/trainings">
+              <Link href="/training">
                 <p>Trainings</p>
               </Link>
             </li>
