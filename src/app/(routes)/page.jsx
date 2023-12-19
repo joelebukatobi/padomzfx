@@ -162,7 +162,7 @@ of Forex trading.`}
         </div>
       </section>
 
-      <TrainingSection openModal={openRegister} />
+      {/* <TrainingSection openModal={openRegister} /> */}
       <TestimonialSection openModal={openTestimonials} />
     </div>
   );

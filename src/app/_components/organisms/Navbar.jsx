@@ -1,15 +1,14 @@
-'use client';
+"use client";
 // React
-import React from 'react';
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from "react";
 // Next
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 // Components
 
 // Image
-import Logo from '@/_assets/images/logo-full.png';
+import Logo from "@/_assets/images/logo-full.png";
 //
 
 export const Navbar = () => {
@@ -36,11 +35,11 @@ export const Navbar = () => {
     };
 
     if (dropdown) {
-      document.addEventListener('click', handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [dropdown]);
 
@@ -55,7 +54,13 @@ export const Navbar = () => {
         <div className="navbar-menu lg:hidden">
           <svg onClick={toggleMenu}>
             {/* <use href={`/images/sprite.svg#icon-menu`} /> */}
-            <use href={menu ? '/images/sprite.svg#icon-close' : '/images/sprite.svg#icon-menu'} />
+            <use
+              href={
+                menu
+                  ? "/images/sprite.svg#icon-close"
+                  : "/images/sprite.svg#icon-menu"
+              }
+            />
           </svg>
         </div>
         <ul
@@ -66,22 +71,29 @@ export const Navbar = () => {
           }
         >
           <li>
-            <a className={pathname === '/' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'} href="/">
+            <a
+              className={
+                pathname === "/"
+                  ? "text-[#009F0B] font-semibold"
+                  : "text-black font-normal"
+              }
+              href="/"
+            >
               Home
             </a>
           </li>
           <li aria-label="dropdown" onClick={toggleDropdown} ref={dropdownRef}>
             <span
               className={
-                pathname === '/about' || pathname === '/team'
-                  ? 'text-[#009F0B] font-semibold'
-                  : 'text-black font-normal'
+                pathname === "/about" || pathname === "/team"
+                  ? "text-[#009F0B] font-semibold"
+                  : "text-black font-normal"
               }
             >
-              {' '}
+              {" "}
               Company
             </span>
-            <hr className={dropdown ? `block` : 'hidden'} />
+            <hr className={dropdown ? `block` : "hidden"} />
             <svg>
               <use href={`/images/sprite.svg#icon-caret`} />
             </svg>
@@ -94,17 +106,21 @@ export const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li>
+          {/* <li>
             <Link
               className={pathname === '/training' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'}
               href="/training"
             >
               Training
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
-              className={pathname === '/contact' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'}
+              className={
+                pathname === "/contact"
+                  ? "text-[#009F0B] font-semibold"
+                  : "text-black font-normal"
+              }
               href="/contact"
             >
               Get In Touch
