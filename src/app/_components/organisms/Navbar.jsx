@@ -101,9 +101,9 @@ export const Navbar = () => {
               <li>
                 <Link href="/about">About Us</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/team">The Team</Link>
-              </li>
+              </li> */}
             </ul>
           </li>
           {/* <li>
