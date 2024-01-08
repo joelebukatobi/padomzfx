@@ -23,11 +23,11 @@ export const Footer = () => {
                 <p>About Us</p>
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/training">
                 <p>Trainings</p>
               </Link>
-            </li> */}
+            </li>
           </ul>
           <ul>
             <li>

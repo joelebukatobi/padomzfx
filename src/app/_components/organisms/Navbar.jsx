@@ -106,14 +106,18 @@ export const Navbar = () => {
               </li> */}
             </ul>
           </li>
-          {/* <li>
+          <li>
             <Link
-              className={pathname === '/training' ? 'text-[#009F0B] font-semibold' : 'text-black font-normal'}
+              className={
+                pathname === "/training"
+                  ? "text-[#009F0B] font-semibold"
+                  : "text-black font-normal"
+              }
               href="/training"
             >
               Training
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               className={
