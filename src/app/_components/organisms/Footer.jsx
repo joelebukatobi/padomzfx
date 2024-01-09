@@ -73,28 +73,28 @@ export const Footer = () => {
           </ul>
           <ul>
             <li>
-              <a href="https://facebook.com/">
+              <a href="https://facebook.com/padomzfxacademy">
                 <svg>
                   <use href={`/images/sprite.svg#icon-facebook`} />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/">
+              <a href="https://instagram.com/padomzfxacademy">
                 <svg>
                   <use href={`/images/sprite.svg#icon-instagram`} />
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com/">
+            {/* <li>
+              <a href="https://linkedin.com/padomzfxacademy">
                 <svg>
                   <use href={`/images/sprite.svg#icon-twitter`} />
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="https://youtube.com/">
+              <a href="https://youtube.com/@padomzfxacademy">
                 <svg>
                   <use href={`/images/sprite.svg#icon-youtube`} />
                 </svg>
