@@ -1,8 +1,8 @@
 //
-export const Select = ({ name, id, children, value }) => {
+export const Select = ({ name, id, children, value, ...props }) => {
   return (
     <div className="select">
-      <select name={name} id={id}>
+      <select name={name} id={id} {...props}>
         {children}
       </select>
       <svg>

@@ -12,7 +12,7 @@ import TrainingImage from "@/_assets/images/training-image.png";
 export const TrainingSection = ({ data }) => {
   const { fields } = data;
   const navigate = useRouter();
-  console.log(data);
+
   return (
     <>
       <section className="training-register">

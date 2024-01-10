@@ -1,4 +1,13 @@
-export const Input = ({ type, placeholder, name, value, id, required, disabled }) => {
+export const Input = ({
+  type,
+  placeholder,
+  name,
+  value,
+  id,
+  required,
+  disabled,
+  ...props
+}) => {
   return (
     <input
       type={type}
@@ -8,6 +17,7 @@ export const Input = ({ type, placeholder, name, value, id, required, disabled }
       id={id}
       required={required}
       disabled={disabled}
+      {...props}
     />
   );
 };
