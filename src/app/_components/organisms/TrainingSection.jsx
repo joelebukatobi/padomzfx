@@ -1,21 +1,18 @@
-'use client';
-//
-import React, { useState } from 'react';
+"use client";
+import { format } from "date-fns"; //
 // Next
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 // Components
-import { Button } from '@/_components/atoms/Button';
+import { Button } from "@/_components/atoms/Button";
 // Images
-import TrainingImage from '@/_assets/images/training-image.png';
+import TrainingImage from "@/_assets/images/training-image.png";
 //
 
-export const TrainingSection = ({ openModal }) => {
+export const TrainingSection = ({ data }) => {
+  const { fields } = data;
   const navigate = useRouter();
-  const openInfo = () => {
-    navigate.push('/training/info');
-  };
-
+  console.log(data);
   return (
     <>
       <section className="training-register">
@@ -23,34 +20,43 @@ export const TrainingSection = ({ openModal }) => {
           <div className="training-register--content">
             <header>
               <p>Upcoming register</p>
-              <h4>Mastering Forex Trading - A Comprehensive Guide</h4>
-              <p>
-                Are you ready to Unleash Your Forex Trading Potential? This course caters to beginners and intermediate
-                traders aiming to gain a robust grasp of the Forex market. Explore trading strategies and foundational
-                concepts in this comprehensive program designed for those eager to evolve into skilled traders.
-              </p>
+              <h4>{fields.title}</h4>
+              <p> {fields.briefDescription}</p>
             </header>
             <ul>
               <li>
                 <svg>
                   <use href={`/images/sprite.svg#icon-clock`} />
                 </svg>
-                <p>4 Weeks</p>
+                <p>{fields.duration}</p>
               </li>
               <li>
                 <svg>
                   <use href={`/images/sprite.svg#icon-calendar`} />
                 </svg>
-                <p>12 December, 2023</p>
+                <p>{format(new Date(fields.startDate), "dd LLLL, yyyy.")}</p>
               </li>
             </ul>
             <div>
-              <Button onClick={openModal}>Register</Button>
-              <Button onClick={openInfo}>Learn More</Button>
+              <Button
+                onClick={() =>
+                  navigate.push(`/training/${fields.slug}/register`)
+                }
+              >
+                {fields.cta}
+              </Button>
+              <Button onClick={() => navigate.push(`/training/${fields.slug}`)}>
+                Learn More
+              </Button>
             </div>
           </div>
           <div className="training-register--image">
-            <Image src={TrainingImage} width="" height="" alt="Training Image" />
+            <Image
+              src={TrainingImage}
+              width=""
+              height=""
+              alt="Training Image"
+            />
           </div>
         </div>
       </section>

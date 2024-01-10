@@ -2,6 +2,7 @@
 // React
 // Next
 import Image from "next/image";
+import Link from "next/link";
 // Components
 import HeroImage from "@/_assets/images/hero-image.png";
 import HeroWaves from "@/_assets/images/hero-waves.png";
@@ -20,7 +21,9 @@ export const LandingHeader = () => {
             risk for you, allowing you to retain almost all of your generated
             profits.
           </h5>
-          <Button>Learn How To Trade With PadomzFx</Button>
+          <Link href="/training">
+            <Button>Learn How To Trade With PadomzFx</Button>
+          </Link>
         </div>
         <div className="landing-header-content--image">
           <Image src={HeroImage} width="" height="" alt="HeroImage" />

@@ -10,8 +10,17 @@ import { TrainingSection } from "@/_components/organisms/TrainingSection";
 // Images
 import PotentialImage from "@/_assets/images/potential-image.png";
 //
+import { client } from "@/lib/contentful/client";
 
 export default function Home() {
+  const [training, setTraining] = useState({});
+  const [loading, setLoading] = useState(true);
+
+  client.getEntries({ content_type: "training" }).then(function (training) {
+    setTraining(training.items[0]);
+    setLoading(false);
+  });
+
   const [register, setRegister] = useState(false);
   const [testimonials, setTestimonials] = useState(false);
   //
@@ -162,7 +171,7 @@ of Forex trading.`}
         </div>
       </section>
 
-      {/* <TrainingSection openModal={openRegister} /> */}
+      {!loading && <TrainingSection openModal={openRegister} data={training} />}
       <TestimonialSection openModal={openTestimonials} />
     </div>
   );

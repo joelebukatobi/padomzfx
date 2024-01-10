@@ -1,39 +1,15 @@
-"use client";
-import { useState } from "react";
 // Next
 // Components
 import { Header } from "@/_components/organisms/Header";
-import { Register } from "@/_components/organisms/Register";
 import { TestimonialSection } from "@/_components/organisms/TestimonialSection";
-import { Testimonials } from "@/_components/organisms/Testimonials";
 import { TrainingSection } from "@/_components/organisms/TrainingSection";
-//
+import { client } from "@/lib/contentful/client";
 
-export default function Training() {
-  const [register, setRegister] = useState(false);
-  const [testimonials, setTestimonials] = useState(false);
-  //
-  const openRegister = () => {
-    setRegister(true);
-  };
-  //
-  const closeRegister = () => {
-    setRegister(false);
-  };
-  //
-  //
-  const openTestimonials = () => {
-    setTestimonials(true);
-  };
-  //
-  const closeTestimonials = () => {
-    setTestimonials(false);
-  };
+const Training = async () => {
+  const allArticles = await client.getEntries({ content_type: "training" });
+
   return (
     <div className="training">
-      {" "}
-      <Testimonials open={testimonials} close={closeTestimonials} />
-      <Register open={register} close={closeRegister} />
       <Header>
         <div className="container">
           <div className="header-training">
@@ -48,10 +24,19 @@ export default function Training() {
         </div>
       </Header>
       <div className="training-available">
-        <TrainingSection openModal={openRegister} />
-        <TrainingSection openModal={openRegister} />
+        {allArticles.items.map((article) => {
+          return (
+            <TrainingSection
+              key={article.id}
+              openModal={false}
+              data={article}
+            />
+          );
+        })}
       </div>
-      <TestimonialSection openModal={openTestimonials} />
+      <TestimonialSection openModal={false} />
     </div>
   );
-}
+};
+
+export default Training;
