@@ -1,18 +1,22 @@
 "use client";
 import { useState } from "react";
 // Next
+import { useFormik } from "formik";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 // Components
 import { Button } from "@/_components/atoms/Button";
 import { Input } from "@/_components/atoms/Input";
+import Loader from "@/_components/atoms/Loader";
 import { TextArea } from "@/_components/atoms/TextArea";
 import { Header } from "@/_components/organisms/Header";
 // Utils
 import { SelectGroup } from "@/_components/molecules/SelectGroup";
 import { faqs } from "@/_utils/faqs";
+import { base } from "@/lib/airtable";
 
 export default function Contact() {
-  //
+  const navigate = useRouter();
   // Initialize an array to track the active state for each FAQ item
   const [activeStates, setActiveStates] = useState(
     Array(faqs.length).fill(false)
@@ -24,6 +28,27 @@ export default function Contact() {
     newActiveStates[index] = !newActiveStates[index];
     setActiveStates(newActiveStates);
   };
+
+  const formik = useFormik({
+    initialValues: {
+      Name: "",
+      Email: "",
+      Phone: "",
+      Course: "",
+      Message: "",
+    },
+    onSubmit: (values) => {
+      base("Contact Leeds").create(values, function (err, record) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+
+        navigate.push("/");
+      });
+    },
+  });
+
   //
   return (
     <div className="contact">
@@ -86,22 +111,38 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <form action="" className="contact-form">
+          <form
+            action=""
+            className="contact-form"
+            onSubmit={formik.handleSubmit}
+          >
             <div className="form-group">
               <Input
                 type="text"
                 placeholder="Full Name"
                 required="required"
-                name="name"
+                name="Name"
+                id="Name"
+                onChange={formik.handleChange}
+                value={formik.values.Name}
               />
               <Input
                 type="email"
                 placeholder="Email Address"
+                id="Email"
+                name="Email"
+                onChange={formik.handleChange}
+                value={formik.values.Email}
                 required="required"
               />
             </div>
             <div className="form-group">
-              <SelectGroup name="name">
+              <SelectGroup
+                id="Course"
+                name="Course"
+                onChange={formik.handleChange}
+                value={formik.values.Course}
+              >
                 <option value="">Select Service Type</option>
                 <option value="Nova Challenge Passing">
                   Nova Challenge Passing
@@ -113,12 +154,31 @@ export default function Contact() {
                 type="phone"
                 placeholder="Phone Number"
                 required="required"
+                id="Phone"
+                name="Phone"
+                onChange={formik.handleChange}
+                value={formik.values.Phone}
               />
             </div>
 
-            <TextArea placeholder="Type Message" required />
+            <TextArea
+              placeholder="Type Message"
+              required
+              id="Message"
+              name="Message"
+              onChange={formik.handleChange}
+              value={formik.values.Message}
+            />
 
-            <Button>Send Message</Button>
+            <Button
+              type="submit"
+              className="flex items-center text-center justify-center disabled:opacity-75"
+              disabled={
+                !(formik.isValid && formik.dirty) || formik.isSubmitting
+              }
+            >
+              Send Message {formik.isSubmitting && <Loader />}
+            </Button>
           </form>
         </div>
       </section>

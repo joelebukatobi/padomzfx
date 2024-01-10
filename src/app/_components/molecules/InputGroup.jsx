@@ -1,10 +1,20 @@
 // 'use client';
 // //
-import React from 'react';
-import { Input } from '@/_components/atoms/Input';
-import { Label } from '@/_components/atoms/Label';
+import { Input } from "@/_components/atoms/Input";
+import { Label } from "@/_components/atoms/Label";
 
-export const InputGroup = ({ name, placeholder, icon, value, type, id, required, label, disabled }) => {
+export const InputGroup = ({
+  name,
+  placeholder,
+  icon,
+  value,
+  type,
+  id,
+  required,
+  label,
+  disabled,
+  ...props
+}) => {
   return (
     <div class="input-group">
       <Label htmlFor="" class="">
@@ -20,6 +30,7 @@ export const InputGroup = ({ name, placeholder, icon, value, type, id, required,
           id={id}
           required={required}
           disabled={disabled}
+          {...props}
         />
       </div>
     </div>
